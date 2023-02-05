@@ -72,3 +72,6 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
+# Vuforia Package is too heavy
+/[Pp]ackages/com.ptc.vuforia.engine-10.13.3.tgz
+

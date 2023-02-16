@@ -4,10 +4,14 @@ using UnityEngine.UI;
 
 namespace Animations
 {
+    public enum WipeMode {Normal = 0, Alternative = 1}
     public class TextWipeAnimation : TextAnimation<float>
     {
         [Tooltip("Method with which the wipe mask should be animated")]
         public Image.FillMethod wipeFillMethod;
+
+        [Tooltip("Mode with which the wipe mask should be animated")]
+        public WipeMode wipeMode;
         
         // Used to create a gameObject that has a Mask and Image component
         private GameObject _maskObject;
@@ -46,7 +50,7 @@ namespace Animations
             maskImageComponent.type = Image.Type.Filled;
             maskImageComponent.fillMethod = wipeFillMethod;
             maskImageComponent.fillAmount = 0f;
-            maskImageComponent.fillOrigin = wipeFillMethod == Image.FillMethod.Vertical ? 1 : 0;
+            maskImageComponent.fillOrigin = (int) wipeMode;
 
             // Set the mask's parent to be the textMesh's current parent, then make the textMesh a child of the mask
             maskImageComponent.rectTransform.SetParent(textMesh.rectTransform.parent, false);

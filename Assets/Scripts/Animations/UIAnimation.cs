@@ -8,7 +8,9 @@ namespace Animations
 {
     public abstract class UIAnimation<TDesiredValue> : MonoBehaviour
     {
-        [Tooltip("Whether to play animation on start or not")] public bool onStart;
+        [Tooltip("Whether to play animation on start or not")]
+        public bool onStart;
+        
         public UIAnimationProps<TDesiredValue> animationProps;
 
         // Used to store the tween for the animation, so you can kill it later

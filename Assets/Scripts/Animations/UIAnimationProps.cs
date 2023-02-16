@@ -10,8 +10,13 @@ namespace Animations
      */
     public class UIAnimationProps<TDesiredValue>
     {
-        [Tooltip("The value you want to animate to")] public TDesiredValue desiredValue;
-        [Tooltip("How long the animation take to complete")] public float duration;
-        [Tooltip("How long to wait before starting the animation")] public float delay;
+        [Tooltip("The value you want to animate to")] 
+        public TDesiredValue desiredValue;
+        
+        [Tooltip("How long the animation take to complete")] 
+        public float duration;
+        
+        [Tooltip("How long to wait before starting the animation")] 
+        public float delay;
     }
 }

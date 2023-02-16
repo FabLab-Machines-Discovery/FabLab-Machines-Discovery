@@ -8,9 +8,10 @@ namespace Animations
 {
     public abstract class UIAnimation<TDesiredValue> : MonoBehaviour
     {
-        public bool onStart;
+        [Tooltip("Whether to play animation on start or not")] public bool onStart;
         public UIAnimationProps<TDesiredValue> animationProps;
 
+        // Used to store the tween for the animation, so you can kill it later
         protected Tween tween;
 
         protected virtual void Start()
@@ -20,8 +21,11 @@ namespace Animations
                 PlayAnimation();
             }
         }
-
+        
+        // Start the animation tween
         public abstract void PlayAnimation();
+        
+        // Resets the animatable component to its original state and kills the tween
         public abstract void ResetAnimation();
     }
 }

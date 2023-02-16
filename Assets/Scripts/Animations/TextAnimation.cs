@@ -6,6 +6,7 @@ namespace Animations
 {
     public abstract class TextAnimation<TDesiredValue> : UIAnimation<TDesiredValue>
     {
+        // Required component for text animations
         protected TextMeshProUGUI textMesh;
         protected virtual void Awake()
         {

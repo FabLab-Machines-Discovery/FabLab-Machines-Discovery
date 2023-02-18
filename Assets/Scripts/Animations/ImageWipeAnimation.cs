@@ -1,32 +1,35 @@
 using UnityEngine;
+using UnityEngine.UI;
 using DG.Tweening;
 
 namespace Animations
 {
-    public class ImageWipeAnimation : ImageAnimation<float>
+    public class ImageWipeAnimation : ImageAnimation<AnimationMode>
     {
-        // Used to store the initial fill amount of the image
-        private float _initialFillAmount;
-
-        protected override void Awake()
-        {
-            base.Awake();
-            _initialFillAmount = image.fillAmount;
-        }
+        [Tooltip("Method with which the wipe mask should be animated")]
+        public Image.FillMethod wipeFillMethod;
+        
+        [Tooltip("Mode with which the wipe mask should be animated")]
+        public WipeType wipeType;
 
         public override void PlayAnimation()
         {
+            // Set image properties
+            image.type = Image.Type.Filled;
+            image.fillMethod = wipeFillMethod;
+            image.fillOrigin = (int)wipeType;
+            image.fillAmount = 1f - (int)animationProps.desiredValue;
+            
             // Change the fill amount of the image to desired value, while applying provided duration and delay
             // Store a reference to it in tween 
-            tween = image.DOFillAmount(animationProps.desiredValue, animationProps.duration)
+            tween = image.DOFillAmount((int)animationProps.desiredValue, animationProps.duration)
                 .SetDelay(animationProps.delay);
         }
 
         public override void ResetAnimation()
         {
-            // Kill the tween and reset the fill amount of image to its initial value
-            tween.Kill();
-            image.fillAmount = _initialFillAmount;
+            base.ResetAnimation();
+            image.fillAmount = 1f - (int)animationProps.desiredValue;
         }
     }
 }

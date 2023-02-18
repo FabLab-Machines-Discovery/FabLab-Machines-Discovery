@@ -134,7 +134,6 @@ GameObject:
   - component: {fileID: 108456005}
   - component: {fileID: 108456007}
   - component: {fileID: 108456006}
-  - component: {fileID: 108456008}
   m_Layer: 5
   m_Name: Bg Image
   m_TagString: Untagged
@@ -183,11 +182,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 91fe1e7088bfa014aadaaca240523e13, type: 3}
-  m_Type: 3
+  m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 1
-  m_FillAmount: 0.2
+  m_FillAmount: 0
   m_FillClockwise: 1
   m_FillOrigin: 1
   m_UseSpriteMesh: 0
@@ -200,23 +199,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 108456004}
   m_CullTransparentMesh: 1
---- !u!114 &108456008
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 108456004}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: adfa4fff7a174366a470dbb0740c08bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onStart: 1
-  animationProps:
-    desiredValue: 0.7
-    duration: 0.5
-    delay: 0
 --- !u!1 &234514283
 GameObject:
   m_ObjectHideFlags: 0
@@ -228,7 +210,6 @@ GameObject:
   - component: {fileID: 234514284}
   - component: {fileID: 234514286}
   - component: {fileID: 234514285}
-  - component: {fileID: 234514287}
   m_Layer: 5
   m_Name: Middle Image
   m_TagString: Untagged
@@ -269,7 +250,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -281,7 +262,7 @@ MonoBehaviour:
   m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0
+  m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -294,23 +275,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 234514283}
   m_CullTransparentMesh: 1
---- !u!114 &234514287
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 234514283}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f71e1fd97d748d299f0fbd72291b8db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onStart: 1
-  animationProps:
-    desiredValue: 1
-    duration: 0.5
-    delay: 1.5
 --- !u!1 &331094878
 GameObject:
   m_ObjectHideFlags: 0
@@ -655,7 +619,6 @@ GameObject:
   - component: {fileID: 838512001}
   - component: {fileID: 838512003}
   - component: {fileID: 838512002}
-  - component: {fileID: 838512005}
   m_Layer: 5
   m_Name: Title
   m_TagString: Untagged
@@ -780,25 +743,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 838512000}
   m_CullTransparentMesh: 1
---- !u!114 &838512005
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 838512000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63794ca077344912b2b0b6cf2d08fdb8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onStart: 1
-  animationProps:
-    desiredValue: 1
-    duration: 0.5
-    delay: 0.5
-  wipeFillMethod: 0
-  wipeMode: 0
 --- !u!1 &1029698978
 GameObject:
   m_ObjectHideFlags: 0
@@ -904,7 +848,6 @@ GameObject:
   - component: {fileID: 1815385313}
   - component: {fileID: 1815385315}
   - component: {fileID: 1815385314}
-  - component: {fileID: 1815385316}
   m_Layer: 5
   m_Name: Subtitle
   m_TagString: Untagged
@@ -1029,22 +972,3 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1815385312}
   m_CullTransparentMesh: 1
---- !u!114 &1815385316
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1815385312}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63794ca077344912b2b0b6cf2d08fdb8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onStart: 1
-  animationProps:
-    desiredValue: 1
-    duration: 0.75
-    delay: 1
-  wipeFillMethod: 0
-  wipeMode: 0

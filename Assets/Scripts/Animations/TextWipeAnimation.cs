@@ -1,28 +1,21 @@
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace Animations
 {
-    public enum WipeMode {Normal = 0, Alternative = 1}
-    public class TextWipeAnimation : TextAnimation<float>
+    public class TextWipeAnimation : TextAnimation<AnimationMode>
     {
         [Tooltip("Method with which the wipe mask should be animated")]
         public Image.FillMethod wipeFillMethod;
 
         [Tooltip("Mode with which the wipe mask should be animated")]
-        public WipeMode wipeMode;
+        public WipeType wipeType;
         
         // Used to create a gameObject that has a Mask and Image component
         private GameObject _maskObject;
         private Sprite _maskSprite;
-
-        private void OnValidate()
-        {
-            // Make sure desiredValue is equal to 1, since any other value doesn't look good in this context
-            animationProps.desiredValue = 1;
-        }
-
         protected override void Awake()
         {
             base.Awake();
@@ -49,27 +42,35 @@ namespace Animations
             maskImageComponent.sprite = _maskSprite;
             maskImageComponent.type = Image.Type.Filled;
             maskImageComponent.fillMethod = wipeFillMethod;
-            maskImageComponent.fillAmount = 0f;
-            maskImageComponent.fillOrigin = (int) wipeMode;
+            maskImageComponent.fillOrigin = (int)wipeType;
+            maskImageComponent.fillAmount = 1 - (int)animationProps.desiredValue;
 
             // Set the mask's parent to be the textMesh's current parent, then make the textMesh a child of the mask
             maskImageComponent.rectTransform.SetParent(textMesh.rectTransform.parent, false);
             textMesh.rectTransform.SetParent(maskImageComponent.rectTransform);
             
             // Animate the mask's image fill amount to desiredValue, while applying provided duration and delay
-            tween = maskImageComponent.DOFillAmount(animationProps.desiredValue, animationProps.duration)
-                .SetDelay(animationProps.delay)
-                .OnComplete(ResetAnimation);
+            tween = maskImageComponent.DOFillAmount((int)animationProps.desiredValue, animationProps.duration)
+                .SetDelay(animationProps.delay);
+
+            // In case of wipe in, the mask is no longer needed on complete
+            if (animationProps.desiredValue == AnimationMode.In)
+            {
+                tween.OnComplete(ResetAnimation);
+            }
+
         }
 
         public override void ResetAnimation()
         {
+            base.ResetAnimation();
+            
             // Set the textMesh's parent to the original parent, which is now the mask's parent
             textMesh.rectTransform.SetParent(_maskObject.GetComponent<Image>().rectTransform.parent);
             
-            // Kill the tween and destroy the mask GameObject as it's no longer needed
-            tween.Kill();
-            Destroy(_maskObject); 
+            // Destroy the mask GameObject since it's no longer needed
+            Destroy(_maskObject);
+            _maskObject = null;
         }
     }
 }

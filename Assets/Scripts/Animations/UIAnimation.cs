@@ -28,6 +28,10 @@ namespace Animations
         public abstract void PlayAnimation();
         
         // Resets the animatable component to its original state and kills the tween
-        public abstract void ResetAnimation();
+        public virtual void ResetAnimation()
+        {
+            // Kill the tween and reset the fill amount of image to its initial value
+            tween?.Kill();
+        }
     }
 }

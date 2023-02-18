@@ -19,4 +19,7 @@ namespace Animations
         [Tooltip("How long to wait before starting the animation")] 
         public float delay;
     }
+    
+    public enum WipeType {Normal = 0, Alternative = 1}
+    public enum AnimationMode {Out = 0, In = 1}
 }

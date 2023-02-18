@@ -24,7 +24,7 @@ namespace Animations
         public override void ResetObj()
         {
             base.ResetObj();
-            textMesh.alpha = 1 - (int)animationProps.desiredValue;
+            PrepareObj();
         }
     }
 }

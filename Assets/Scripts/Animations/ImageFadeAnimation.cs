@@ -23,7 +23,7 @@ namespace Animations
         public override void ResetObj()
         {
             base.ResetObj();
-            image.color = new Color(image.color.r, image.color.g, image.color.b, 1 - (int)animationProps.desiredValue);
+            PrepareObj();
         }
     }
 }

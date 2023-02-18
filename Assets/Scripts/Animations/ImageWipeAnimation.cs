@@ -34,7 +34,7 @@ namespace Animations
         public override void ResetObj()
         {
             base.ResetObj();
-            image.fillAmount = 1f - (int)animationProps.desiredValue;
+            PrepareObj();
         }
     }
 }

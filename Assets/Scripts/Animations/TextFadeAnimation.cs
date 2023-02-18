@@ -5,25 +5,26 @@ namespace Animations
 {
     public class TextFadeAnimation : TextAnimation<AnimationMode>
     {
-        public override void PlayAnimation()
+        public override void PrepareObj()
         {
-            // Set text properties
-            textMesh.color = new Color(textMesh.color.r, textMesh.color.g, textMesh.color.b,
-                1 - (int)animationProps.desiredValue);
-            
-            // Change the alpha of textMesh to desired value, while applying provided duration and delay
-            // Store a reference to it in tween 
-            tween = DOTween.To(() => textMesh.color, x => textMesh.color = x,
-                    new Color(textMesh.color.r, textMesh.color.g, textMesh.color.b, (int)animationProps.desiredValue),
-                    animationProps.duration)
-                .SetOptions(true)
-                .SetDelay(animationProps.delay);
+            // Set text alpha
+            textMesh.alpha = 1 - (int)animationProps.desiredValue;
         }
 
-        public override void ResetAnimation()
+        public override void PlayAnimation()
         {
-            base.ResetAnimation();
-            textMesh.color = new Color(textMesh.color.r, textMesh.color.g, textMesh.color.b, 1 - (int)animationProps.desiredValue);
+            // Change the alpha of textMesh to desired value, while applying provided duration and delay
+            // Store a reference to it in tween 
+            tween = DOTween.To(() => textMesh.alpha, x => textMesh.alpha = x,
+                (int)animationProps.desiredValue, animationProps.duration)
+                .SetDelay(animationProps.delay)
+                .OnStart(PrepareObj);
+        }
+
+        public override void ResetObj()
+        {
+            base.ResetObj();
+            textMesh.alpha = 1 - (int)animationProps.desiredValue;
         }
     }
 }

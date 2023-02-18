@@ -6,7 +6,7 @@ namespace Animations
     public interface IUIAnimation
     {
         void PlayAnimation();
-        void ResetAnimation();
+        void ResetObj();
     }
     public abstract class UIAnimation<TDesiredValue> : MonoBehaviour, IUIAnimation
     {
@@ -26,11 +26,14 @@ namespace Animations
             }
         }
         
+        // Prepare the game object for the animation
+        public abstract void PrepareObj();
+        
         // Start the animation tween
         public abstract void PlayAnimation();
         
-        // Resets the animatable component to its original state and kills the tween
-        public virtual void ResetAnimation()
+        // Resets the game object to its original state and kills the tween
+        public virtual void ResetObj()
         {
             // Kill the tween and reset the fill amount of image to its initial value
             tween?.Kill();

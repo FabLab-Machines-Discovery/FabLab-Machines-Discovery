@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
@@ -12,23 +13,27 @@ namespace Animations
         [Tooltip("Mode with which the wipe mask should be animated")]
         public WipeType wipeType;
 
-        public override void PlayAnimation()
+        public override void PrepareObj()
         {
             // Set image properties
             image.type = Image.Type.Filled;
             image.fillMethod = wipeFillMethod;
             image.fillOrigin = (int)wipeType;
             image.fillAmount = 1f - (int)animationProps.desiredValue;
-            
+        }
+
+        public override void PlayAnimation()
+        {
             // Change the fill amount of the image to desired value, while applying provided duration and delay
             // Store a reference to it in tween 
             tween = image.DOFillAmount((int)animationProps.desiredValue, animationProps.duration)
-                .SetDelay(animationProps.delay);
+                .SetDelay(animationProps.delay)
+                .OnStart(PrepareObj);
         }
 
-        public override void ResetAnimation()
+        public override void ResetObj()
         {
-            base.ResetAnimation();
+            base.ResetObj();
             image.fillAmount = 1f - (int)animationProps.desiredValue;
         }
     }

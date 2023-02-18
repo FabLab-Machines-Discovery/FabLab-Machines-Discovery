@@ -174,7 +174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.47843137, b: 0.003921569, a: 1}
+  m_Color: {r: 1, g: 0.5883648, b: 0.2113207, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1548,7 +1548,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You will find color coded tips around the machine
+  m_text: You will find color coded popups around the machine. Click them!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 782b60ce29b29854487baa1f60bcf08c, type: 2}
   m_sharedMaterial: {fileID: 3627594241729979601, guid: 782b60ce29b29854487baa1f60bcf08c, type: 2}

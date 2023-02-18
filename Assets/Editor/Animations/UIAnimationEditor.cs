@@ -25,22 +25,8 @@ namespace Editor.Animations
                     return;
                 }
                 
-                uiAnimationScript.PlayAnimation();
-            }
-            
-            EditorGUILayout.Space();
-            
-            if (GUILayout.Button("Reset Object"))
-            {
-                if (uiAnimationScript == null) return;
-
-                if (!Application.isPlaying)
-                {
-                    Debug.LogWarning("You should be in play mode to reset the animation");
-                    return;
-                }
-                
                 uiAnimationScript.ResetObj();
+                uiAnimationScript.PlayAnimation();
             }
         }
     }

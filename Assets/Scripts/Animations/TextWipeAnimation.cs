@@ -1,6 +1,5 @@
 using UnityEngine;
 using DG.Tweening;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace Animations
@@ -64,13 +63,15 @@ namespace Animations
         public override void ResetAnimation()
         {
             base.ResetAnimation();
-            
+
+            if (!_maskObject) return;
             // Set the textMesh's parent to the original parent, which is now the mask's parent
             textMesh.rectTransform.SetParent(_maskObject.GetComponent<Image>().rectTransform.parent);
             
             // Destroy the mask GameObject since it's no longer needed
             Destroy(_maskObject);
             _maskObject = null;
+
         }
     }
 }

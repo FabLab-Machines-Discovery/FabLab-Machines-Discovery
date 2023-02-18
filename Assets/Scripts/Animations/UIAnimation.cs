@@ -1,12 +1,14 @@
-using System;
-using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
-using UnityEngine.Serialization;
 
 namespace Animations
 {
-    public abstract class UIAnimation<TDesiredValue> : MonoBehaviour
+    public interface IUIAnimation
+    {
+        void PlayAnimation();
+        void ResetAnimation();
+    }
+    public abstract class UIAnimation<TDesiredValue> : MonoBehaviour, IUIAnimation
     {
         [Tooltip("Whether to play animation on start or not")]
         public bool onStart;

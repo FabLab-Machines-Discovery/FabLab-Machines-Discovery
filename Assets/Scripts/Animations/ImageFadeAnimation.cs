@@ -7,7 +7,7 @@ namespace Animations
     {
         public override void PrepareObj()
         {
-            // Set image properties
+            // Set image alpha
             image.color = new Color(image.color.r, image.color.g, image.color.b, 1 - (int)animationProps.desiredValue);
         }
 

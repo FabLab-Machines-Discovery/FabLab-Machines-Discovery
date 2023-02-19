@@ -12,6 +12,7 @@ namespace Editor.Animations
         {
             DrawDefaultInspector();
             
+            // Need to get script as interface because it's UIAnimation is a generic class
             var uiAnimationScript = target as IUIAnimation;
 
             EditorGUILayout.Space();

@@ -4,6 +4,7 @@ using Onboarding_Scene;
 
 namespace Animations
 {
+    // Interface used for the custom editor because UIAnimation is a generic class
     public interface IUIAnimation
     {
         void PlayAnimation();
@@ -11,6 +12,7 @@ namespace Animations
     }
     public abstract class UIAnimation<TDesiredValue> : MonoBehaviour, IUIAnimation
     {
+        // Properties used for animation
         public UIAnimationProps<TDesiredValue> animationProps;
 
         // Used to store the tween for the animation, so you can kill it later

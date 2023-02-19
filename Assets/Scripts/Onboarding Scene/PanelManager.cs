@@ -10,6 +10,7 @@ namespace Onboarding_Scene
         public float logoPanelDuration;
         public GameObject startPanel;
         public GameObject tutorialPanel;
+        public GameObject panelPagination;
 
         private void OnValidate()
         {
@@ -32,6 +33,7 @@ namespace Onboarding_Scene
         {
             startPanel.SetActive(false);
             tutorialPanel.SetActive(true);
+            panelPagination.SetActive(true);
         }
     }
     

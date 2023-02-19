@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 55694816}
   - component: {fileID: 55694818}
   - component: {fileID: 55694817}
+  - component: {fileID: 55694819}
   m_Layer: 5
   m_Name: Text (TMP) (3)
   m_TagString: Untagged
@@ -190,8 +191,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 16777215
+  m_fontColor: {r: 1, g: 1, b: 1, a: 0}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -258,6 +259,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 55694815}
   m_CullTransparentMesh: 1
+--- !u!114 &55694819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 55694815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02a001e089944d918466c3ca33d84aea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationProps:
+    startProps:
+      when: 1
+      panelIndex: 2
+    desiredValue: 1
+    duration: 0.5
+    delay: 1.25
 --- !u!1 &188250998
 GameObject:
   m_ObjectHideFlags: 0
@@ -343,7 +363,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 83.4
+  m_fontSize: 92
   m_fontSizeBase: 80
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -483,8 +503,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adfa4fff7a174366a470dbb0740c08bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onStart: 1
   animationProps:
+    startProps:
+      when: 0
+      panelIndex: 0
     desiredValue: 1
     duration: 1
     delay: 0
@@ -502,8 +524,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adfa4fff7a174366a470dbb0740c08bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onStart: 1
   animationProps:
+    startProps:
+      when: 0
+      panelIndex: 0
     desiredValue: 0
     duration: 1
     delay: 3
@@ -595,7 +619,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45.25
+  m_fontSize: 50
   m_fontSizeBase: 47
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -656,6 +680,7 @@ GameObject:
   - component: {fileID: 271557524}
   - component: {fileID: 271557526}
   - component: {fileID: 271557525}
+  - component: {fileID: 271557527}
   m_Layer: 5
   m_Name: Bg Image
   m_TagString: Untagged
@@ -704,7 +729,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 91fe1e7088bfa014aadaaca240523e13, type: 3}
-  m_Type: 0
+  m_Type: 3
   m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 1
@@ -721,6 +746,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 271557523}
   m_CullTransparentMesh: 1
+--- !u!114 &271557527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 271557523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adfa4fff7a174366a470dbb0740c08bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationProps:
+    startProps:
+      when: 1
+      panelIndex: 2
+    desiredValue: 1
+    duration: 1.5
+    delay: 0
+  wipeFillMethod: 1
+  wipeType: 1
 --- !u!1001 &309384803
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -824,6 +870,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7214190289290723507, guid: 5c480e921141487449f9b1fbf0c2de85, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7214190289290723509, guid: 5c480e921141487449f9b1fbf0c2de85, type: 3}
       propertyPath: m_Name
       value: Info Icon
@@ -834,6 +884,11 @@ PrefabInstance:
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7214190289290723506, guid: 5c480e921141487449f9b1fbf0c2de85, type: 3}
   m_PrefabInstance: {fileID: 309384803}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &324579468 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 408939885074035810, guid: b80522160624fe0409f2851e8dae832f, type: 3}
+  m_PrefabInstance: {fileID: 989050245}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &390732311
 GameObject:
@@ -1097,6 +1152,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 545540258}
   m_CullTransparentMesh: 1
+--- !u!1 &699009535 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5909798520146789255, guid: 217adcec33c2b3d44848eb28649f8ca0, type: 3}
+  m_PrefabInstance: {fileID: 1694415315}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &710137025
 GameObject:
   m_ObjectHideFlags: 0
@@ -1189,6 +1249,7 @@ GameObject:
   - component: {fileID: 764704989}
   - component: {fileID: 764704991}
   - component: {fileID: 764704990}
+  - component: {fileID: 764704992}
   m_Layer: 5
   m_Name: Bg Image
   m_TagString: Untagged
@@ -1203,7 +1264,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 764704988}
-  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 6, y: 6, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1237,7 +1298,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 91fe1e7088bfa014aadaaca240523e13, type: 3}
-  m_Type: 0
+  m_Type: 3
   m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 1
@@ -1254,6 +1315,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 764704988}
   m_CullTransparentMesh: 1
+--- !u!114 &764704992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 764704988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adfa4fff7a174366a470dbb0740c08bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationProps:
+    startProps:
+      when: 1
+      panelIndex: 1
+    desiredValue: 1
+    duration: 1.5
+    delay: 0
+  wipeFillMethod: 1
+  wipeType: 0
 --- !u!1 &771606544
 GameObject:
   m_ObjectHideFlags: 0
@@ -1333,6 +1415,7 @@ GameObject:
   - component: {fileID: 809931281}
   - component: {fileID: 809931283}
   - component: {fileID: 809931282}
+  - component: {fileID: 809931284}
   m_Layer: 5
   m_Name: Phone Frame
   m_TagString: Untagged
@@ -1381,11 +1464,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: c55953ce42d3b9a4a85473f4888271f8, type: 3}
-  m_Type: 0
+  m_Type: 3
   m_PreserveAspect: 1
   m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
+  m_FillMethod: 0
+  m_FillAmount: 0
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -1398,6 +1481,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 809931280}
   m_CullTransparentMesh: 1
+--- !u!114 &809931284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 809931280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f71e1fd97d748d299f0fbd72291b8db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationProps:
+    startProps:
+      when: 1
+      panelIndex: 1
+    desiredValue: 1
+    duration: 0.5
+    delay: 0.5
 --- !u!1 &818128825
 GameObject:
   m_ObjectHideFlags: 0
@@ -1896,7 +1998,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 16777215
+    rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 0}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -1976,8 +2078,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02a001e089944d918466c3ca33d84aea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onStart: 1
   animationProps:
+    startProps:
+      when: 0
+      panelIndex: 0
     desiredValue: 1
     duration: 0
     delay: 1.3
@@ -1991,6 +2095,10 @@ PrefabInstance:
     - target: {fileID: 408939885074035810, guid: b80522160624fe0409f2851e8dae832f, type: 3}
       propertyPath: m_Name
       value: Instruction Icon
+      objectReference: {fileID: 0}
+    - target: {fileID: 408939885074035812, guid: b80522160624fe0409f2851e8dae832f, type: 3}
+      propertyPath: m_Color.a
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 408939885074035813, guid: b80522160624fe0409f2851e8dae832f, type: 3}
       propertyPath: m_Pivot.x
@@ -2095,6 +2203,25 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 408939885074035813, guid: b80522160624fe0409f2851e8dae832f, type: 3}
   m_PrefabInstance: {fileID: 989050245}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &989050249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 324579468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f71e1fd97d748d299f0fbd72291b8db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationProps:
+    startProps:
+      when: 1
+      panelIndex: 2
+    desiredValue: 1
+    duration: 0.5
+    delay: 0.75
 --- !u!1 &1026934416
 GameObject:
   m_ObjectHideFlags: 0
@@ -2184,8 +2311,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adfa4fff7a174366a470dbb0740c08bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onStart: 1
   animationProps:
+    startProps:
+      when: 0
+      panelIndex: 0
     desiredValue: 1
     duration: 1.5
     delay: 0
@@ -2276,7 +2405,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 83.4
+  m_fontSize: 92
   m_fontSizeBase: 80
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2326,6 +2455,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1187254971}
   m_CullTransparentMesh: 1
+--- !u!1 &1197705826 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7214190289290723509, guid: 5c480e921141487449f9b1fbf0c2de85, type: 3}
+  m_PrefabInstance: {fileID: 309384803}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1197705829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1197705826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f71e1fd97d748d299f0fbd72291b8db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationProps:
+    startProps:
+      when: 1
+      panelIndex: 2
+    desiredValue: 1
+    duration: 0.5
+    delay: 0.5
 --- !u!1 &1236422738
 GameObject:
   m_ObjectHideFlags: 0
@@ -2337,6 +2490,7 @@ GameObject:
   - component: {fileID: 1236422739}
   - component: {fileID: 1236422741}
   - component: {fileID: 1236422740}
+  - component: {fileID: 1236422742}
   m_Layer: 5
   m_Name: Text (TMP) (1)
   m_TagString: Untagged
@@ -2393,8 +2547,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 16777215
+  m_fontColor: {r: 1, g: 1, b: 1, a: 0}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2461,6 +2615,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1236422738}
   m_CullTransparentMesh: 1
+--- !u!114 &1236422742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1236422738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02a001e089944d918466c3ca33d84aea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationProps:
+    startProps:
+      when: 1
+      panelIndex: 2
+    desiredValue: 1
+    duration: 0.5
+    delay: 0.75
+--- !u!1 &1268211705 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2211321003857209843, guid: 474a8156ab690b3449af5549deb4dc18, type: 3}
+  m_PrefabInstance: {fileID: 2115140762}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1291871004
 GameObject:
   m_ObjectHideFlags: 0
@@ -2546,7 +2724,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 83.4
+  m_fontSize: 92
   m_fontSizeBase: 80
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2818,8 +2996,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adfa4fff7a174366a470dbb0740c08bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onStart: 1
   animationProps:
+    startProps:
+      when: 0
+      panelIndex: 0
     desiredValue: 1
     duration: 0.3
     delay: 1
@@ -2849,6 +3029,7 @@ GameObject:
   - component: {fileID: 1566917834}
   - component: {fileID: 1566917836}
   - component: {fileID: 1566917835}
+  - component: {fileID: 1566917837}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -2905,8 +3086,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 16777215
+  m_fontColor: {r: 1, g: 1, b: 1, a: 0}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2973,6 +3154,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1566917833}
   m_CullTransparentMesh: 1
+--- !u!114 &1566917837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566917833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02a001e089944d918466c3ca33d84aea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationProps:
+    startProps:
+      when: 1
+      panelIndex: 2
+    desiredValue: 1
+    duration: 0.5
+    delay: 0.5
 --- !u!1 &1575007670
 GameObject:
   m_ObjectHideFlags: 0
@@ -3080,7 +3280,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1650475144}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3088,7 +3288,7 @@ RectTransform:
   - {fileID: 764704989}
   m_Father: {fileID: 451728882}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -3291,6 +3491,7 @@ GameObject:
   - component: {fileID: 1692180116}
   - component: {fileID: 1692180118}
   - component: {fileID: 1692180117}
+  - component: {fileID: 1692180119}
   m_Layer: 5
   m_Name: Middle Image
   m_TagString: Untagged
@@ -3339,11 +3540,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 63fbe30a43376fa459c05892be02b0f7, type: 3}
-  m_Type: 0
+  m_Type: 3
   m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 1
+  m_FillAmount: 0
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -3356,6 +3557,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1692180115}
   m_CullTransparentMesh: 1
+--- !u!114 &1692180119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692180115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adfa4fff7a174366a470dbb0740c08bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationProps:
+    startProps:
+      when: 0
+      panelIndex: 0
+    desiredValue: 1
+    duration: 0.5
+    delay: 0.5
+  wipeFillMethod: 0
+  wipeType: 1
 --- !u!1001 &1694415315
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3459,6 +3681,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5909798520146789249, guid: 217adcec33c2b3d44848eb28649f8ca0, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5909798520146789255, guid: 217adcec33c2b3d44848eb28649f8ca0, type: 3}
       propertyPath: m_Name
       value: Safety Icon
@@ -3470,6 +3696,25 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5909798520146789248, guid: 217adcec33c2b3d44848eb28649f8ca0, type: 3}
   m_PrefabInstance: {fileID: 1694415315}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1694415319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 699009535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f71e1fd97d748d299f0fbd72291b8db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationProps:
+    startProps:
+      when: 1
+      panelIndex: 2
+    desiredValue: 1
+    duration: 0.5
+    delay: 1.25
 --- !u!1 &1696508405
 GameObject:
   m_ObjectHideFlags: 0
@@ -3538,7 +3783,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 16777215
+    rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 0}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -3618,8 +3863,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02a001e089944d918466c3ca33d84aea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onStart: 1
   animationProps:
+    startProps:
+      when: 0
+      panelIndex: 0
     desiredValue: 1
     duration: 0.5
     delay: 0.5
@@ -3786,6 +4033,7 @@ GameObject:
   - component: {fileID: 1850384260}
   - component: {fileID: 1850384262}
   - component: {fileID: 1850384261}
+  - component: {fileID: 1850384263}
   m_Layer: 5
   m_Name: Text (TMP) (2)
   m_TagString: Untagged
@@ -3842,8 +4090,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 16777215
+  m_fontColor: {r: 1, g: 1, b: 1, a: 0}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3910,6 +4158,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1850384259}
   m_CullTransparentMesh: 1
+--- !u!114 &1850384263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1850384259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02a001e089944d918466c3ca33d84aea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationProps:
+    startProps:
+      when: 1
+      panelIndex: 2
+    desiredValue: 1
+    duration: 0.5
+    delay: 1
 --- !u!1 &1871622328
 GameObject:
   m_ObjectHideFlags: 0
@@ -3921,6 +4188,7 @@ GameObject:
   - component: {fileID: 1871622329}
   - component: {fileID: 1871622331}
   - component: {fileID: 1871622330}
+  - component: {fileID: 1871622332}
   m_Layer: 5
   m_Name: Robot Arm
   m_TagString: Untagged
@@ -3969,11 +4237,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 3411e443849ac7744a4e6104aefef69d, type: 3}
-  m_Type: 0
+  m_Type: 3
   m_PreserveAspect: 1
   m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
+  m_FillMethod: 0
+  m_FillAmount: 0
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -3986,6 +4254,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1871622328}
   m_CullTransparentMesh: 1
+--- !u!114 &1871622332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871622328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adfa4fff7a174366a470dbb0740c08bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationProps:
+    startProps:
+      when: 1
+      panelIndex: 1
+    desiredValue: 1
+    duration: 0.5
+    delay: 0.5
+  wipeFillMethod: 0
+  wipeType: 1
 --- !u!1 &1930109737
 GameObject:
   m_ObjectHideFlags: 0
@@ -3997,6 +4286,7 @@ GameObject:
   - component: {fileID: 1930109738}
   - component: {fileID: 1930109740}
   - component: {fileID: 1930109739}
+  - component: {fileID: 1930109741}
   m_Layer: 5
   m_Name: Bg Image
   m_TagString: Untagged
@@ -4045,7 +4335,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 91fe1e7088bfa014aadaaca240523e13, type: 3}
-  m_Type: 0
+  m_Type: 3
   m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 1
@@ -4062,6 +4352,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1930109737}
   m_CullTransparentMesh: 1
+--- !u!114 &1930109741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1930109737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adfa4fff7a174366a470dbb0740c08bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationProps:
+    startProps:
+      when: 0
+      panelIndex: 0
+    desiredValue: 1
+    duration: 1.5
+    delay: 0
+  wipeFillMethod: 1
+  wipeType: 1
 --- !u!1 &1931674589
 GameObject:
   m_ObjectHideFlags: 0
@@ -4210,7 +4521,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 0
+    rgba: 4278190080
   m_fontColor: {r: 0, g: 0, b: 0, a: 0}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -4290,9 +4601,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02a001e089944d918466c3ca33d84aea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onStart: 0
   animationProps:
-    desiredValue: 0
+    startProps:
+      when: 0
+      panelIndex: 0
+    desiredValue: 1
     duration: 0.5
     delay: 0.75
 --- !u!1 &1999542297
@@ -4385,8 +4698,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adfa4fff7a174366a470dbb0740c08bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onStart: 1
   animationProps:
+    startProps:
+      when: 0
+      panelIndex: 0
     desiredValue: 0
     duration: 1
     delay: 3
@@ -4404,8 +4719,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adfa4fff7a174366a470dbb0740c08bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onStart: 1
   animationProps:
+    startProps:
+      when: 0
+      panelIndex: 0
     desiredValue: 1
     duration: 1
     delay: 0
@@ -4518,6 +4835,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2211321003857209845, guid: 474a8156ab690b3449af5549deb4dc18, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 474a8156ab690b3449af5549deb4dc18, type: 3}
 --- !u!224 &2115140763 stripped
@@ -4525,6 +4846,25 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2211321003857209844, guid: 474a8156ab690b3449af5549deb4dc18, type: 3}
   m_PrefabInstance: {fileID: 2115140762}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2115140766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1268211705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f71e1fd97d748d299f0fbd72291b8db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationProps:
+    startProps:
+      when: 1
+      panelIndex: 2
+    desiredValue: 1
+    duration: 0.5
+    delay: 1
 --- !u!1 &2127470613
 GameObject:
   m_ObjectHideFlags: 0
@@ -4657,7 +4997,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 46.95
+  m_fontSize: 50
   m_fontSizeBase: 47
   m_fontWeight: 400
   m_enableAutoSizing: 1

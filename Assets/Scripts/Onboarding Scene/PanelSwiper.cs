@@ -17,6 +17,20 @@ namespace Onboarding_Scene
 
         private void Start()
         {
+            SetPosition();
+        }
+
+        public void SetPosition()
+        {
+            
+            var width = transform.GetChild(0).GetComponent<RectTransform>().rect.width;
+            for (int i = 0; i < transform.childCount; i++)
+            {
+                var rt = transform.GetChild(i).GetComponent<RectTransform>();
+                Utility.RectTransformExtensions.SetLeft(rt, width * i);
+                Utility.RectTransformExtensions.SetRight(rt, -width * i);
+            }
+            
             _startPosition = transform.position;
         }
 

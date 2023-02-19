@@ -1,6 +1,7 @@
 using Animations;
 using UnityEditor;
 using UnityEngine;
+// ReSharper disable All
 
 namespace Editor.Animations
 {

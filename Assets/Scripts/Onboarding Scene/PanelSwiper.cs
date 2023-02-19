@@ -1,9 +1,11 @@
+using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using DG.Tweening;
 
 namespace Onboarding_Scene
 {
+    [DefaultExecutionOrder(-1)]
     public class PanelSwiper : MonoBehaviour, IDragHandler, IEndDragHandler
     {
         [Tooltip("At what percentage threshold should I swipe to the next panel automatically")]
@@ -11,7 +13,9 @@ namespace Onboarding_Scene
         
         [Tooltip("Duration it takes to smoothly swipe to another panel")]
         [Range(0, 1)] public float swipeDuration;
-        
+        public static event Action<int> OnSwipe;
+
+        private readonly float _swipeDistance = Screen.width / 2f;
         private Vector3 _startPosition;
         private int _currentPanel;
 
@@ -19,14 +23,18 @@ namespace Onboarding_Scene
         {
             SetPosition();
         }
-
-        public void SetPosition()
+        private static void InvokeOnSwipe(int panelIndex)
         {
-            
+            OnSwipe?.Invoke(panelIndex);
+        }
+
+        private void SetPosition()
+        {
             var width = transform.GetChild(0).GetComponent<RectTransform>().rect.width;
+            
             for (int i = 0; i < transform.childCount; i++)
             {
-                var rt = transform.GetChild(i).GetComponent<RectTransform>();
+                var rt = (RectTransform) transform.GetChild(i);
                 Utility.RectTransformExtensions.SetLeft(rt, width * i);
                 Utility.RectTransformExtensions.SetRight(rt, -width * i);
             }
@@ -41,15 +49,15 @@ namespace Onboarding_Scene
             
             if (_currentPanel == 0)
             {
-                xPos = Mathf.Clamp(_startPosition.x - movement, _startPosition.x - Screen.width, _startPosition.x);
+                xPos = Mathf.Clamp(_startPosition.x - movement, _startPosition.x - _swipeDistance, _startPosition.x);
             } else if (_currentPanel == transform.childCount - 1)
             {
-                xPos = Mathf.Clamp(_startPosition.x - movement, _startPosition.x, _startPosition.x + Screen.width);
+                xPos = Mathf.Clamp(_startPosition.x - movement, _startPosition.x, _startPosition.x + _swipeDistance);
             }
             else
             {
-                xPos = Mathf.Clamp(_startPosition.x - movement, _startPosition.x - Screen.width,
-                    _startPosition.x + Screen.width);
+                xPos = Mathf.Clamp(_startPosition.x - movement, _startPosition.x - _swipeDistance,
+                    _startPosition.x + _swipeDistance);
             }
             
             transform.position = new Vector3(xPos, _startPosition.y, _startPosition.z);
@@ -64,12 +72,12 @@ namespace Onboarding_Scene
                 if (threshold > 0 && _currentPanel < transform.childCount - 1)
                 {
                     _startPosition.x -= Screen.width;
-                    _currentPanel++;
+                    InvokeOnSwipe(++_currentPanel);
                 }
                 else if (threshold < 0 && _currentPanel > 0)
                 {
                     _startPosition.x += Screen.width;
-                    _currentPanel--;
+                    InvokeOnSwipe(--_currentPanel);
                 }
             }
 

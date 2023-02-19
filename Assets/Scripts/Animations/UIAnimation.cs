@@ -1,5 +1,6 @@
 using UnityEngine;
 using DG.Tweening;
+using Onboarding_Scene;
 
 namespace Animations
 {
@@ -10,9 +11,6 @@ namespace Animations
     }
     public abstract class UIAnimation<TDesiredValue> : MonoBehaviour, IUIAnimation
     {
-        [Tooltip("Whether to play animation on start or not")]
-        public bool onStart;
-        
         public UIAnimationProps<TDesiredValue> animationProps;
 
         // Used to store the tween for the animation, so you can kill it later
@@ -20,17 +18,29 @@ namespace Animations
 
         protected virtual void Start()
         {
-            if (onStart)
+            if (animationProps.startProps.when == AnimationStartType.OnStart)
             {
                 PlayAnimation();
             }
+            else
+            {
+                PanelSwiper.OnSwipe += PlayAnimationOnSwipe;
+            }
         }
-        
+
         // Prepare the game object for the animation
         public abstract void PrepareObj();
         
         // Start the animation tween
         public abstract void PlayAnimation();
+
+        private void PlayAnimationOnSwipe(int panelIndex)
+        {
+            if (animationProps.startProps.panelIndex != panelIndex) return;
+            
+            PlayAnimation();
+            PanelSwiper.OnSwipe -= PlayAnimationOnSwipe;
+        }
         
         // Resets the game object to its original state and kills the tween
         public virtual void ResetObj()

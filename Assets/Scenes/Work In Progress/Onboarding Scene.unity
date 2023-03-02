@@ -2224,7 +2224,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 47.55
+  m_fontSize: 51.15
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3935,6 +3935,7 @@ GameObject:
   - component: {fileID: 1696508408}
   - component: {fileID: 1696508407}
   - component: {fileID: 1696508409}
+  - component: {fileID: 1696508410}
   m_Layer: 5
   m_Name: Title
   m_TagString: Untagged
@@ -4078,6 +4079,44 @@ MonoBehaviour:
     desiredValue: 1
     duration: 0.5
     delay: 0.5
+--- !u!114 &1696508410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696508405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjects:
+  - rid: 6146584520675819521
+  references:
+    version: 2
+    RefIds:
+    - rid: 6146584520675819521
+      type: {class: TrackedUGuiGraphic, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects, asm: Unity.Localization}
+      data:
+        m_Target: {fileID: 1696508407}
+        m_TrackedProperties:
+          items:
+          - rid: 6146584520675819522
+        m_UpdateType: 0
+    - rid: 6146584520675819522
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:5ede5aa17d68d554f9124190cb132c74
+          m_TableEntryReference:
+            m_KeyId: 119776653312
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: m_text
 --- !u!1 &1728550930
 GameObject:
   m_ObjectHideFlags: 0
@@ -4747,7 +4786,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 46
+  m_fontSize: 44.35
   m_fontSizeBase: 47
   m_fontWeight: 400
   m_enableAutoSizing: 1

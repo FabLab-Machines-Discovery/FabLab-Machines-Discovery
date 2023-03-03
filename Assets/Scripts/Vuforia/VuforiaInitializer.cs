@@ -8,6 +8,7 @@ namespace Vuforia
     {
         private void Awake()
         {
+            Screen.orientation = ScreenOrientation.LandscapeLeft;
             VuforiaApplication.Instance.Initialize();
         }
     }

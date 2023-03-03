@@ -17,14 +17,6 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 4df460c5220a504429acad8a61383364
   m_SerializeEntries:
-  - m_GUID: d73a2285b58cf5d4c86cd1884b9215c2
-    m_Address: Assets/Resources/Localization/Localization Strings Shared Data.asset
-    m_ReadOnly: 1
-    m_SerializedLabels: []
-  - m_GUID: 91fe14eebdefea442a6ccdbbac371328
-    m_Address: Assets/Resources/Localization/Localized Strings Shared Data.asset
-    m_ReadOnly: 1
-    m_SerializedLabels: []
   - m_GUID: 5ede5aa17d68d554f9124190cb132c74
     m_Address: Assets/Resources/Localization/Localized Strings Shared Data.asset
     m_ReadOnly: 1

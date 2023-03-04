@@ -75,3 +75,6 @@ crashlytics-build.properties
 # Vuforia Package is too heavy
 /[Pp]ackages/com.ptc.vuforia.engine-10.13.3.tgz
 
+# IDE Specific
+.idea/
+

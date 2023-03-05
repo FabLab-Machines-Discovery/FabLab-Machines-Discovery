@@ -31,38 +31,38 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1002158265270272
-    m_Localized: C'est parti
+    m_Localized: Alors, c'est parti!
     m_Metadata:
       m_Items: []
   - m_Id: 1002525958930432
-    m_Localized: 'Le tutoriel '
+    m_Localized: El Tutoriel
     m_Metadata:
       m_Items: []
   - m_Id: 1003700892532736
-    m_Localized: "L'exp\xE9rience ultime de FabLab"
+    m_Localized: "L'exp\xE9rience FabLab ultime"
     m_Metadata:
       m_Items: []
   - m_Id: 1004088077123584
-    m_Localized: Optimisez l'utilisation des machines avec nos conseils d'experts
-      et nos informations
+    m_Localized: "Tirez le meilleur parti des machines gr\xE2ce \xE0 nos conseils
+      et informations d'experts"
     m_Metadata:
       m_Items: []
   - m_Id: 1005444414373888
-    m_Localized: "Vivez une exp\xE9rience FabLab comme vous ne l'avez jamais v\xE9cu"
+    m_Localized: "D\xE9couvrez l'espace FabLab comme jamais auparavant"
     m_Metadata:
       m_Items: []
   - m_Id: 1005945692422144
-    m_Localized: "Avec votre appareil photo, capturez simplement la machine pour
-      r\xE9v\xE9ler instantan\xE9ment des astuces et des informations utiles"
+    m_Localized: "Pointez l'appareil photo vers l'\xE9tiquette d'une machine pour
+      r\xE9v\xE9ler des astuces et des informations utiles"
     m_Metadata:
       m_Items: []
   - m_Id: 1006915461644288
-    m_Localized: "Devenez familier, Pr\xE9parez votre prototype !!"
+    m_Localized: "Familiarisez-vous, Cr\xE9ez votre prototype!"
     m_Metadata:
       m_Items: []
   - m_Id: 1007296543522816
-    m_Localized: "Vous trouverez des pop-ups cod\xE9s en couleurs autour de la machine.
-      Cliquez dessus!"
+    m_Localized: "Vous trouverez des popups cod\xE9s par couleur autour de la machine.
+      Cliquez dessus pour afficher leur contenu!"
     m_Metadata:
       m_Items: []
   - m_Id: 1007528886992896
@@ -70,7 +70,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1007674672611328
-    m_Localized: "Risques pour la s\xE9curit\xE9\n"
+    m_Localized: Danger et risque
     m_Metadata:
       m_Items: []
   - m_Id: 1007736349851648
@@ -82,7 +82,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1008037194694656
-    m_Localized: "D\xE9marrez la cam\xE9ra"
+    m_Localized: "D\xE9marrez La Cam\xE9ra"
     m_Metadata:
       m_Items: []
   references:

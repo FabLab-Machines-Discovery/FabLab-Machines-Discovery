@@ -27,11 +27,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1002068167426048
-    m_Localized: Augment Your FabLab Experience
+    m_Localized: Augment your FabLab experience
     m_Metadata:
       m_Items: []
   - m_Id: 1002158265270272
-    m_Localized: Let's get started
+    m_Localized: Let's get started!
     m_Metadata:
       m_Items: []
   - m_Id: 1002525958930432
@@ -39,7 +39,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1003700892532736
-    m_Localized: The Ultimate FabLab Experience
+    m_Localized: The ultimate FabLab experience
     m_Metadata:
       m_Items: []
   - m_Id: 1004088077123584
@@ -47,20 +47,21 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1005444414373888
-    m_Localized: Experience FabLab Like Never Before
+    m_Localized: Experience FabLab like never before
     m_Metadata:
       m_Items: []
   - m_Id: 1005945692422144
-    m_Localized: With your camera, simply capture the machine to reveal useful tips
-      and information instantly
+    m_Localized: With your camera, simply capture a machine's tag to reveal useful
+      tips and information instantly
     m_Metadata:
       m_Items: []
   - m_Id: 1006915461644288
-    m_Localized: Get Familiar, Get Prototype Ready!
+    m_Localized: Get familiar, Get prototype ready!
     m_Metadata:
       m_Items: []
   - m_Id: 1007296543522816
-    m_Localized: You will find color coded popups around the machine. Click them!
+    m_Localized: You will find color coded popups around the machine. Click them
+      to reveal their content!
     m_Metadata:
       m_Items: []
   - m_Id: 1007528886992896

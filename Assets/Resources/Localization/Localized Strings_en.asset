@@ -26,6 +26,63 @@ MonoBehaviour:
     m_Localized: English Information
     m_Metadata:
       m_Items: []
+  - m_Id: 1002068167426048
+    m_Localized: Augment Your FabLab Experience
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1002158265270272
+    m_Localized: Let's get started
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1002525958930432
+    m_Localized: El Tutorial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1003700892532736
+    m_Localized: The Ultimate FabLab Experience
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1004088077123584
+    m_Localized: Get the most out of the machines with our expert tips and information
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1005444414373888
+    m_Localized: Experience FabLab Like Never Before
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1005945692422144
+    m_Localized: With your camera, simply capture the machine to reveal useful tips
+      and information instantly
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1006915461644288
+    m_Localized: Get Familiar, Get Prototype Ready!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1007296543522816
+    m_Localized: You will find color coded popups around the machine. Click them!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1007528886992896
+    m_Localized: General Information
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1007674672611328
+    m_Localized: Safety Risks
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1007736349851648
+    m_Localized: Use Instructions
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1007807376195584
+    m_Localized: Technical Information
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1008037194694656
+    m_Localized: Start Camera
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

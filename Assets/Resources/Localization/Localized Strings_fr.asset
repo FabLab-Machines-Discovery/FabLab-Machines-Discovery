@@ -26,6 +26,65 @@ MonoBehaviour:
     m_Localized: French Information
     m_Metadata:
       m_Items: []
+  - m_Id: 1002068167426048
+    m_Localized: "Augmentez votre exp\xE9rience FabLab"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1002158265270272
+    m_Localized: C'est parti
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1002525958930432
+    m_Localized: 'Le tutoriel '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1003700892532736
+    m_Localized: "L'exp\xE9rience ultime de FabLab"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1004088077123584
+    m_Localized: Optimisez l'utilisation des machines avec nos conseils d'experts
+      et nos informations
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1005444414373888
+    m_Localized: "Vivez une exp\xE9rience FabLab comme vous ne l'avez jamais v\xE9cu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1005945692422144
+    m_Localized: "Avec votre appareil photo, capturez simplement la machine pour
+      r\xE9v\xE9ler instantan\xE9ment des astuces et des informations utiles"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1006915461644288
+    m_Localized: "Devenez familier, Pr\xE9parez votre prototype !!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1007296543522816
+    m_Localized: "Vous trouverez des pop-ups cod\xE9s en couleurs autour de la machine.
+      Cliquez dessus!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1007528886992896
+    m_Localized: "Informations g\xE9n\xE9rales"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1007674672611328
+    m_Localized: "Risques pour la s\xE9curit\xE9\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1007736349851648
+    m_Localized: Mode d'emploi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1007807376195584
+    m_Localized: Informations techniques
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1008037194694656
+    m_Localized: "D\xE9marrez la cam\xE9ra"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

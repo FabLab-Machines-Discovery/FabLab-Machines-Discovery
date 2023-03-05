@@ -23,6 +23,63 @@ MonoBehaviour:
     m_Key: Popup Example
     m_Metadata:
       m_Items: []
+  - m_Id: 1002068167426048
+    m_Key: Onboarding Scene/Canvas/Start Panel/Subtitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1002158265270272
+    m_Key: Onboarding Scene/Canvas/Start Panel/Button caption
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1002525958930432
+    m_Key: Onboarding Scene/Canvas/Start Panel/Tutorial Button/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1003700892532736
+    m_Key: Onboarding Scene/Canvas/Tutorial Panels/Panel 1/Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1004088077123584
+    m_Key: Onboarding Scene/Canvas/Tutorial Panels/Panel 1/Subtitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1005444414373888
+    m_Key: Onboarding Scene/Canvas/Tutorial Panels/Panel 2/Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1005945692422144
+    m_Key: Onboarding Scene/Canvas/Tutorial Panels/Panel 2/Subtitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1006915461644288
+    m_Key: Onboarding Scene/Canvas/Tutorial Panels/Panel 3/Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1007296543522816
+    m_Key: Onboarding Scene/Canvas/Tutorial Panels/Panel 3/Subtitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1007528886992896
+    m_Key: Onboarding Scene/Canvas/Tutorial Panels/Panel 3/Texts/General Info Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1007674672611328
+    m_Key: Onboarding Scene/Canvas/Tutorial Panels/Panel 3/Texts/Safety Risk Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1007736349851648
+    m_Key: Onboarding Scene/Canvas/Tutorial Panels/Panel 3/Texts/Use Instructions
+      Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1007807376195584
+    m_Key: Onboarding Scene/Canvas/Tutorial Panels/Panel 3/Texts/Technical Info Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1008037194694656
+    m_Key: Onboarding Scene/Canvas/Tutorial Panels/Panel 3/Start Button/Text (TMP)
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

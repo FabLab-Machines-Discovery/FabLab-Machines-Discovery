@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Localized Strings_fr
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: fr
+  m_SharedData: {fileID: 11400000, guid: 5ede5aa17d68d554f9124190cb132c74, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 119776653312
+    m_Localized: "D\xE9couverte des machines FabLab\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 314268754817024
+    m_Localized: French Information
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1002068167426048
+    m_Localized: "Augmentez votre exp\xE9rience FabLab"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1002158265270272
+    m_Localized: Alors, c'est parti!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1002525958930432
+    m_Localized: El Tutoriel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1003700892532736
+    m_Localized: "L'exp\xE9rience FabLab ultime"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1004088077123584
+    m_Localized: "Tirez le meilleur parti des machines gr\xE2ce \xE0 nos conseils
+      et informations d'experts"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1005444414373888
+    m_Localized: "D\xE9couvrez l'espace FabLab comme jamais auparavant"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1005945692422144
+    m_Localized: "Pointez l'appareil photo vers l'\xE9tiquette d'une machine pour
+      r\xE9v\xE9ler des astuces et des informations utiles"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1006915461644288
+    m_Localized: Pensez comme un expert
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1007296543522816
+    m_Localized: "Vous trouverez des popups cod\xE9s par couleur autour de la machine.
+      Cliquez dessus pour afficher leur contenu!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1007528886992896
+    m_Localized: "Informations g\xE9n\xE9rales"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1007674672611328
+    m_Localized: Danger et risque
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1007736349851648
+    m_Localized: Mode d'emploi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1007807376195584
+    m_Localized: Informations techniques
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1008037194694656
+    m_Localized: "D\xE9marrez La Cam\xE9ra"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

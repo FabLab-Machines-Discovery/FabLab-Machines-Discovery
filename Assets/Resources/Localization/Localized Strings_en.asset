@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Localized Strings_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 5ede5aa17d68d554f9124190cb132c74, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 119776653312
+    m_Localized: FabLab Machines Discovery
+    m_Metadata:
+      m_Items: []
+  - m_Id: 314268754817024
+    m_Localized: English Information
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1002068167426048
+    m_Localized: Augment your FabLab experience
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1002158265270272
+    m_Localized: Let's get started!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1002525958930432
+    m_Localized: El Tutorial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1003700892532736
+    m_Localized: The Ultimate FabLab Experience
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1004088077123584
+    m_Localized: Get the most out of the machines with our expert tips and information
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1005444414373888
+    m_Localized: Experience FabLab Like Never Before
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1005945692422144
+    m_Localized: With your camera, simply capture a machine's tag to reveal useful
+      tips and information instantly
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1006915461644288
+    m_Localized: Think Like An Expert
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1007296543522816
+    m_Localized: You will find color coded popups around the machine. Click them
+      to reveal their content!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1007528886992896
+    m_Localized: General Information
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1007674672611328
+    m_Localized: Safety Risks
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1007736349851648
+    m_Localized: Use Instructions
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1007807376195584
+    m_Localized: Technical Information
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1008037194694656
+    m_Localized: Start Camera
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

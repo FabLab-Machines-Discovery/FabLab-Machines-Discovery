@@ -4,13 +4,7 @@ using Onboarding_Scene;
 
 namespace Animations
 {
-    // Interface used for the custom editor because UIAnimation is a generic class
-    public interface IUIAnimation
-    {
-        void PlayAnimation();
-        void ResetObj();
-    }
-    public abstract class UIAnimation<TDesiredValue> : MonoBehaviour, IUIAnimation
+    public abstract class UIAnimation<TDesiredValue> : MonoBehaviour
     {
         // Properties used for animation
         public UIAnimationProps<TDesiredValue> animationProps;
@@ -22,33 +16,31 @@ namespace Animations
         {
             if (animationProps.startProps.when == AnimationStartType.OnStart)
             {
-                PlayAnimation();
+                Play();
             }
             else
             {
-                PanelSwiper.OnSwipe += PlayAnimationOnSwipe;
+                PanelSwiper.OnSwipe += PlayOnSwipe;
             }
         }
 
-        // Prepare the game object for the animation
-        public abstract void PrepareObj();
-        
         // Start the animation tween
-        public abstract void PlayAnimation();
+        public abstract void Play();
 
-        private void PlayAnimationOnSwipe(int panelIndex)
+        // Start the animation when the swipe event is invoked
+        private void PlayOnSwipe(int panelIndex)
         {
             if (animationProps.startProps.panelIndex != panelIndex) return;
             
-            PlayAnimation();
-            PanelSwiper.OnSwipe -= PlayAnimationOnSwipe;
+            Play();
+            PanelSwiper.OnSwipe -= PlayOnSwipe;
         }
-        
-        // Resets the game object to its original state and kills the tween
-        public virtual void ResetObj()
+
+        // Kill the tween when the object is disabled or destroyed
+        protected void OnDisable()
         {
-            // Kill the tween and reset the fill amount of image to its initial value
             tween?.Kill();
+
         }
     }
 }

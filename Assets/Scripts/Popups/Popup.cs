@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 namespace Popups
@@ -9,9 +8,11 @@ namespace Popups
     }
     public class Popup : MonoBehaviour
     {
+        [Tooltip("Reference to the localized string that stores this popup's information")]
         public string reference;
+        [Tooltip("Type of the popup")]
         public PopupType type;
-
+        
         public void SetPopupInfo()
         {
             PopupInfoUI.Instance.DisplayPopupInfo(reference, type);

@@ -22,10 +22,6 @@ MonoBehaviour:
     m_Localized: FabLab Machines Discovery
     m_Metadata:
       m_Items: []
-  - m_Id: 314268754817024
-    m_Localized: English Information
-    m_Metadata:
-      m_Items: []
   - m_Id: 1002068167426048
     m_Localized: Augment your FabLab experience
     m_Metadata:

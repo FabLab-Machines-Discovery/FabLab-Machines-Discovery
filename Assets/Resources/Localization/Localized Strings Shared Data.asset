@@ -19,10 +19,6 @@ MonoBehaviour:
     m_Key: Onboarding Scene/Canvas/Start Panel/Title
     m_Metadata:
       m_Items: []
-  - m_Id: 314268754817024
-    m_Key: Popup Example
-    m_Metadata:
-      m_Items: []
   - m_Id: 1002068167426048
     m_Key: Onboarding Scene/Canvas/Start Panel/Subtitle
     m_Metadata:

@@ -81,6 +81,10 @@ MonoBehaviour:
     m_Localized: "D\xE9marrez La Cam\xE9ra"
     m_Metadata:
       m_Items: []
+  - m_Id: 2878590432931840
+    m_Localized: Cliquez sur une popup pour afficher son contenu
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

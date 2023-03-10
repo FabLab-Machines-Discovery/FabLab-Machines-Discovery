@@ -76,6 +76,10 @@ MonoBehaviour:
     m_Key: Onboarding Scene/Canvas/Tutorial Panels/Panel 3/Start Button/Text (TMP)
     m_Metadata:
       m_Items: []
+  - m_Id: 2878590432931840
+    m_Key: Popup Default
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

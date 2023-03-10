@@ -80,6 +80,10 @@ MonoBehaviour:
     m_Localized: Start Camera
     m_Metadata:
       m_Items: []
+  - m_Id: 2878590432931840
+    m_Localized: 'Click on a popup to display its content '
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

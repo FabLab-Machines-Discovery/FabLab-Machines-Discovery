@@ -4,19 +4,10 @@ using UnityEngine;
 namespace Animations
 {
     [Serializable]
-    public class UIAnimationStartProps
-    {
-        [Tooltip("Whether to play animation on start or on panel swipe")]
-        public AnimationStartType when;
-        
-        [Tooltip("Only needed when using panel swipe")]
-        public int panelIndex;
-    }
-    
-    [Serializable]
     public class UIAnimationProps<TDesiredValue>
     {
-        public UIAnimationStartProps startProps;
+        [Tooltip("Whether to play the animation on start or not")]
+        public bool autoPlay = true;
         
         [Tooltip("The value you want to animate to")] 
         public TDesiredValue desiredValue;
@@ -30,5 +21,4 @@ namespace Animations
     
     public enum WipeType {Normal = 0, Alternative = 1}
     public enum AnimationMode {Out = 0, In = 1}
-    public enum AnimationStartType {OnStart, OnPanelSwipe}
 }

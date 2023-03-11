@@ -81,7 +81,67 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2878590432931840
-    m_Localized: 'Click on a popup to display its content '
+    m_Localized: Click on a popup to display its content
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3199153097502720
+    m_Localized: 'Brand: Raise3D
+
+      Model: N1'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3199524914163712
+    m_Localized: 3D printing produces very complex shapes that would be otherwise
+      impossible to construct by hand
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3200241120931840
+    m_Localized: This is the interface you use to configure the machine's settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3200538216067072
+    m_Localized: This is the nozzle that's responsible of printing the object
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3201202396688384
+    m_Localized: Depending on the object, 3D printing can take from as little as
+      30 minutes to several days
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3201503790985216
+    m_Localized: 'Max build volume: 205x205x205 mm
+
+      Printing Speed: 10 - 150
+      mm/s'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3202201031110656
+    m_Localized: This is the printing surface
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3202965635952640
+    m_Localized: Using ideaMaker, you can import an .stl or .obj file and prepare
+      it for printing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3203835165503488
+    m_Localized: Using this USB slot, you can import your prepared model file
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3204578257760256
+    m_Localized: You can turn the machine on/off from this button
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3204757300015104
+    m_Localized: You can refill the machine's filament from here
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3204926280134656
+    m_Localized: Do not shutdown the machine while printing is in progress
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3205057553461248
+    m_Localized: Wait at least 20 minutes for the machine to cool off before shutdown
     m_Metadata:
       m_Items: []
   references:

@@ -5,13 +5,11 @@ namespace Animations
 {
     public class TranslationAnimation : UIAnimation<Vector3>
     {
-        private RectTransform _rectTransform;
         public override void Play()
         {
-            //Get Initial position of the component
-            _rectTransform = GetComponent<RectTransform>();
+            //Change the position to desired value, while applying provided duration and delay
             //Store a reference to it in tween 
-            tween = _rectTransform.DOLocalMove(animationProps.desiredValue,animationProps.duration).SetRelative()
+            tween = transform.DOLocalMove(animationProps.desiredValue,animationProps.duration).SetRelative()
                 .SetDelay(animationProps.delay);
         }
         

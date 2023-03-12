@@ -42,14 +42,23 @@ namespace Popups
         [Tooltip("Alpha of the color applied to the container")]
         [Range(0, 1)] public float titleContainerAlpha;
         
+        [Tooltip("Title text component")]
         public TextMeshProUGUI title;
+        
+        [Tooltip("Information text component")]
         public TextMeshProUGUI information;
+        
+        [Tooltip("Colors applied to text component and title container when a popup is clicked")]
         public PopupColors popupColors;
         
         // Used to retrieve the translated/localized strings depending on given reference
         private LocalizedString _information;
-        // Name of the localized string table
+        
+        [Tooltip("Name of the localized string table")]
         [SerializeField] private string stringTableReference;
+        
+        [Tooltip("Reference to the default localized string")]
+        [SerializeField] private string defaultReference;
         
         // Singleton Pattern
         private void Awake()
@@ -65,7 +74,20 @@ namespace Popups
             }
         }
 
-        // Used to update the information's text by retrieving the given localized string's value
+        private void Start()
+        {
+            UpdateText();
+        }
+
+        // Update the text component to the default localized string's value
+        private void UpdateText()
+        {
+            _information.TableReference = stringTableReference;
+            _information.TableEntryReference = defaultReference;
+            information.text = _information.GetLocalizedString();
+        }
+
+        // Update the text component by retrieving the given localized string's value
         private void UpdateText(string reference)
         {
             _information.TableReference = stringTableReference;
@@ -73,14 +95,19 @@ namespace Popups
             information.text = _information.GetLocalizedString();
         }
 
-        // Used to update the colors of the information's text and the title container depending on the clicked popup
+        //Update the colors of the text component and the title container depending on the clicked popup
         private void UpdateColor(Color color)
         {
             titleContainer.color = new Color(color.r, color.g, color.b, titleContainerAlpha);
             information.color = color;
         }
 
-        // Called by the popup class
+        /// <summary>
+        /// Displays the text of the localized string using its reference.
+        /// This is mainly called by the <see cref="Popup"/> class to display its content when it's clicked.
+        /// </summary>
+        /// <param name="reference">Reference of the localized string</param>
+        /// <param name="type">Type of the popup</param>
         public void DisplayPopupInfo(string reference, PopupType type)
         {
             UpdateText(reference);

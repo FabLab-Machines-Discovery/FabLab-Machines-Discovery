@@ -76,6 +76,62 @@ MonoBehaviour:
     m_Key: Onboarding Scene/Canvas/Tutorial Panels/Panel 3/Start Button/Text (TMP)
     m_Metadata:
       m_Items: []
+  - m_Id: 2878590432931840
+    m_Key: Popup Default
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3199153097502720
+    m_Key: R3N1 G1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3199524914163712
+    m_Key: R3N1 G2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3200241120931840
+    m_Key: R3N1 U1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3200538216067072
+    m_Key: R3N1 G3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3201202396688384
+    m_Key: R3N1 G4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3201503790985216
+    m_Key: R3N1 T1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3202201031110656
+    m_Key: R3N1 G5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3202965635952640
+    m_Key: R3N1 T2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3203835165503488
+    m_Key: R3N1 T3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3204578257760256
+    m_Key: R3N1 U2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3204757300015104
+    m_Key: R3N1 U3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3204926280134656
+    m_Key: R3N1 S1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3205057553461248
+    m_Key: R3N1 S2
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

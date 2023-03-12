@@ -85,6 +85,67 @@ MonoBehaviour:
     m_Localized: Cliquez sur une popup pour afficher son contenu
     m_Metadata:
       m_Items: []
+  - m_Id: 3199153097502720
+    m_Localized: "Marque: Raise3D\r\nMod\xE8le: N1"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3199524914163712
+    m_Localized: "L'impression 3D produit des formes tr\xE8s complexes qui seraient
+      autrement impossibles \xE0 construire \xE0 la main"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3200241120931840
+    m_Localized: "Vous pouvez r\xE9gler les param\xE8tres machine \xE0 l'aide de
+      cet \xE9cran"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3200538216067072
+    m_Localized: Cette partie est responsable de l'impression de l'objet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3201202396688384
+    m_Localized: "Selon l'objet, l'impression 3D peut prendre de 30 minutes jusqu'
+      \xE0 plusieurs jours"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3201503790985216
+    m_Localized: 'Volume de construction: 205x205x205 mm
+
+      Vitesse d''impression:
+      10 - 150 mm/s'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3202201031110656
+    m_Localized: Ceci est la surface d'impression
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3202965635952640
+    m_Localized: "Avec \"ideaMaker\", vous pouvez importer un fichier .stl ou .obj
+      et le pr\xE9parer pour l'impression"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3203835165503488
+    m_Localized: "\xC0 l'aide de ce port USB, vous pouvez importer votre fichier
+      de mod\xE8le pr\xE9par\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3204578257760256
+    m_Localized: "Vous pouvez allumer/\xE9teindre la machine \xE0 partir de ce bouton"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3204757300015104
+    m_Localized: "Vous pouvez recharger le filament de la machine \xE0 partir d'ici"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3204926280134656
+    m_Localized: "N'\xE9teignez pas la machine pendant l'impression"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3205057553461248
+    m_Localized: "Il faut attendre au moins 20 minutes pour que la machine refroidisse
+      avant de l'\xE9teindre"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

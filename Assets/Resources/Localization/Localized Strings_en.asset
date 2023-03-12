@@ -96,11 +96,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3200241120931840
-    m_Localized: This is the interface you use to configure the machine's settings
+    m_Localized: You can adjust the machine's settings using this screen
     m_Metadata:
       m_Items: []
   - m_Id: 3200538216067072
-    m_Localized: This is the nozzle that's responsible of printing the object
+    m_Localized: This part is responsible of printing the object
     m_Metadata:
       m_Items: []
   - m_Id: 3201202396688384
@@ -109,10 +109,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3201503790985216
-    m_Localized: 'Max build volume: 205x205x205 mm
+    m_Localized: 'Build volume: 205x205x205 mm
 
-      Printing Speed: 10 - 150
-      mm/s'
+      Printing Speed: 10 - 150 mm/s'
     m_Metadata:
       m_Items: []
   - m_Id: 3202201031110656
@@ -120,7 +119,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3202965635952640
-    m_Localized: Using ideaMaker, you can import an .stl or .obj file and prepare
+    m_Localized: Using "ideaMaker", you can import an .stl or .obj file and prepare
       it for printing
     m_Metadata:
       m_Items: []

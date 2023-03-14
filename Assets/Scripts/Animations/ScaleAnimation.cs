@@ -7,10 +7,6 @@ namespace Animations
 {
     public class ScaleAnimation : UIAnimation<Vector3>
     {
-        [Tooltip("popEffect")]
-        public bool popEffect;
-        public int y;
-        
         public override void Play()
         {
             //Change the scale to desired value, while applying provided duration and delay

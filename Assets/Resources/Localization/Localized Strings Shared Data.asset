@@ -132,6 +132,10 @@ MonoBehaviour:
     m_Key: R3N1 S2
     m_Metadata:
       m_Items: []
+  - m_Id: 4281610181898240
+    m_Key: Loading
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

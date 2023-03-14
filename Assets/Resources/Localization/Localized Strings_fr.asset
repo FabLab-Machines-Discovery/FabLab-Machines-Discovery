@@ -146,6 +146,10 @@ MonoBehaviour:
       avant de l'\xE9teindre"
     m_Metadata:
       m_Items: []
+  - m_Id: 4281610181898240
+    m_Localized: Chargement..
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

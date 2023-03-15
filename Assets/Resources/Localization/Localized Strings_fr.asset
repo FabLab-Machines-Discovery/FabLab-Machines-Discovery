@@ -44,7 +44,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1005444414373888
-    m_Localized: "D\xE9couvrez l'espace FabLab comme jamais auparavant"
+    m_Localized: "D\xE9couvrez FabLab d'une fa\xE7on unique"
     m_Metadata:
       m_Items: []
   - m_Id: 1005945692422144
@@ -53,7 +53,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1006915461644288
-    m_Localized: Pensez comme un expert
+    m_Localized: "Acc\xE9der \xE0 une large vari\xE9t\xE9 d'informations"
     m_Metadata:
       m_Items: []
   - m_Id: 1007296543522816
@@ -66,7 +66,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1007674672611328
-    m_Localized: Danger et risque
+    m_Localized: "Risques de s\xE9curit\xE9"
     m_Metadata:
       m_Items: []
   - m_Id: 1007736349851648

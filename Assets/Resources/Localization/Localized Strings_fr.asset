@@ -150,6 +150,82 @@ MonoBehaviour:
     m_Localized: Chargement..
     m_Metadata:
       m_Items: []
+  - m_Id: 5007439829532672
+    m_Localized: "Type: Routeur CNC\nMod\xE8le: 6090Z-VFD1.5KW"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5020929222901760
+    m_Localized: "Le routeur CNC convient \xE0 l'industrie, \xE0 la recherche technologique,
+      \xE0 la cr\xE9ation artistique, \xE0 l'enseignement, aux projets d'\xE9tudiants"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5026937928286208
+    m_Localized: "Les forets du CNC les plus utilis\xE9s sont pour: La Gravure, La
+      Coupure & La Perforation"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5027943718191104
+    m_Localized: "L'usinage CNC est tr\xE8s pr\xE9cis et permet une pr\xE9cision
+      am\xE9lior\xE9e gr\xE2ce \xE0 un traitement lent avec une tol\xE9rance de \xB1
+      0,00508 mm \xE0 \xB1 0,0127 mm"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5030685073342464
+    m_Localized: "Zone de gravure: 900x600mm\nVitesse de gravure: 300-3000 mm/min\nCourse
+      de l'axe Z:\r 125mm "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5031918446182400
+    m_Localized: "Ce sont les supports, ils emp\xEAchent le mouvements des mat\xE9riaux
+      lors d'usinage"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5032197363204096
+    m_Localized: La broche, le coeur de toutes les machines CNC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5034327314661376
+    m_Localized: Il s'agit de 3 axes X, Y & Z, et cela permet de achever des operations
+      3D.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5034857311109120
+    m_Localized: "Le CNC Controller, prend le G-code et le transforme en mouvement
+      en contr\xF4lant les diff\xE9rents axes et la broche"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5036769318141952
+    m_Localized: Les Types des fichier que cette machine utilise sont DXF, DWG, PDF
+      et STL pour 3D, ect...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5037982835146752
+    m_Localized: "Placez le mat\xE9riel sur la plateforme"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5038292873904128
+    m_Localized: Fixez le materiel en utilisant les supports
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5039033877397504
+    m_Localized: "Vous pouvez allumer/\xE9teindre la machine \xE0 partir de ce bouton"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5039150869118976
+    m_Localized: "Ne vous approchez jamais de la t\xEAte de la machine lorsque la
+      coupe est en cours"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5039489349451776
+    m_Localized: "Portez toujours des lunettes de protection pour prot\xE9ger la
+      vue"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5039886126415872
+    m_Localized: "Appuyez sur ce bouton pour arr\xEAter tout fonctionnement uniquement
+      si: \rQuelque chose s'emm\xEAle dans la machine\r ou bien la machine se d\xE9traque"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -1,4 +1,4 @@
-using System;
+using Animations;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Localization;
@@ -6,60 +6,43 @@ using UnityEngine.UI;
 
 namespace Popups
 {
-    [Serializable] public class PopupColors
-    {
-        public Color generalColor;
-        public Color useInstructionColor;
-        public Color technicalColor;
-        public Color safetyRiskColor;
-        public Color defaultColor;
-
-        // Get a color depending on type of the popup
-        public Color GetColor(PopupType type)
-        {
-            switch (type)
-            {
-                case PopupType.General:
-                    return generalColor;
-                case PopupType.UseInstruction:
-                    return useInstructionColor;
-                case PopupType.Technical:
-                    return technicalColor;
-                case PopupType.SafetyRisk:
-                    return safetyRiskColor;
-                default:
-                    return defaultColor;
-            }
-        }
-    }
     public class PopupInfoUI : MonoBehaviour
     {
         // Instance for Singleton pattern
         public static PopupInfoUI Instance { get; private set; }
 
-        [Tooltip("Container of the title text")]
-        public Image titleContainer;
+        [SerializeField] [Tooltip("Duration of the enter/exit translation animation")]
+        [Range(0, 1)] private float animationDuration;
+
+        [SerializeField] [Tooltip("Container of the title text")]
+        private Image titleContainer;
+
+        [SerializeField] [Tooltip("Title text component")]
+        private TextMeshProUGUI machineTitle;
         
-        [Tooltip("Alpha of the color applied to the container")]
-        [Range(0, 1)] public float titleContainerAlpha;
+        [SerializeField] [Tooltip("Information text component")]
+        private TextMeshProUGUI information;
         
-        [Tooltip("Title text component")]
-        public TextMeshProUGUI title;
+        [SerializeField] [Tooltip("Colors applied to text component and title container when a popup is clicked")]
+        private PopupColors popupColors;
+
+        [SerializeField] [Tooltip("Name of the localized string table")]
+        private string stringTableReference = "Missing Table Reference";
         
-        [Tooltip("Information text component")]
-        public TextMeshProUGUI information;
+        [SerializeField] [Tooltip("Reference to the localized string that holds the default information text")]
+        private string defaultInformationReference = "Missing Default Reference";
         
-        [Tooltip("Colors applied to text component and title container when a popup is clicked")]
-        public PopupColors popupColors;
+        // Used to retrieve the localized popup information using its reference. Example: R3N1 G1
+        private LocalizedString _localizedInformation;
+
+        // Used to retrieve the localized machine title using its reference. Example: 3D Printer
+        private LocalizedString _localizedMachineTitle;
+
+        // Animation played when showing UI
+        private TranslationAnimation _enterAnimation;
         
-        // Used to retrieve the translated/localized strings depending on given reference
-        private LocalizedString _information;
-        
-        [Tooltip("Name of the localized string table")]
-        [SerializeField] private string stringTableReference;
-        
-        [Tooltip("Reference to the default localized string")]
-        [SerializeField] private string defaultReference;
+        // Animation played when hiding UI
+        private TranslationAnimation _exitAnimation;
         
         // Singleton Pattern
         private void Awake()
@@ -70,49 +53,121 @@ namespace Popups
             }
             else
             {
-                _information = new LocalizedString();
+                Initialize();
                 Instance = this;
             }
         }
 
-        private void Start()
+        // Called to initialize some members of this class on Awake
+        private void Initialize()
         {
-            UpdateText();
+            // Construct localized strings
+            _localizedInformation = new LocalizedString();
+            _localizedMachineTitle = new LocalizedString();
+            
+            var localPositionY = transform.localPosition.y;
+            var heightOfUI = GetComponent<RectTransform>().rect.height;
+            // Enter animation: translate upwards from initial local position until whole UI is visible
+            _enterAnimation = CreateTranslationAnimation(new Vector3(0, localPositionY + heightOfUI, 0));
+            // Exit animation: translate back to initial local position
+            _exitAnimation = CreateTranslationAnimation(new Vector3(0, localPositionY, 0));
         }
 
-        // Update the text component to the default localized string's value
-        private void UpdateText()
+        // Called to create the components needed for enter and exit animations
+        private TranslationAnimation CreateTranslationAnimation(Vector3 desiredPosition)
         {
-            _information.TableReference = stringTableReference;
-            _information.TableEntryReference = defaultReference;
-            information.text = _information.GetLocalizedString();
+            // Add translation animation component to object
+            var translationAnimation = gameObject.AddComponent<TranslationAnimation>();
+
+            // Initialize component
+            translationAnimation.animationProps = new UIAnimationProps<Vector3>
+            {
+                autoPlay = false,
+                desiredValue = desiredPosition,
+                duration = animationDuration,
+                delay = 0
+            };
+            translationAnimation.isRelative = false;
+            
+            return translationAnimation;
         }
 
-        // Update the text component by retrieving the given localized string's value
-        private void UpdateText(string reference)
+        // Update the title text component using reference to a localized string
+        private void UpdateTitle(string reference)
         {
-            _information.TableReference = stringTableReference;
-            _information.TableEntryReference = reference;
-            information.text = _information.GetLocalizedString();
+            // Set localized title with the given reference
+            _localizedMachineTitle.TableReference = stringTableReference;
+            _localizedMachineTitle.TableEntryReference = reference;
+            
+            // Get the localized string and update title text component
+            machineTitle.text = _localizedMachineTitle.GetLocalizedString();
+        }
+        
+        // Update the information text component to the default
+        private void UpdateInformationText()
+        {
+            // Set localized information with the default reference
+            _localizedInformation.TableReference = stringTableReference;
+            _localizedInformation.TableEntryReference = defaultInformationReference;
+            
+            // Get the localized string and update information text component
+            information.text = _localizedInformation.GetLocalizedString();
         }
 
-        //Update the colors of the text component and the title container depending on the clicked popup
+        // Update the information text component using reference to a localized string
+        private void UpdateInformationText(string reference)
+        {
+            // Set localized information with the given reference
+            _localizedInformation.TableReference = stringTableReference;
+            _localizedInformation.TableEntryReference = reference;
+            
+            // Get the localized string and update information text component
+            information.text = _localizedInformation.GetLocalizedString();
+        }
+
+        // Update the colors of the text and title component
         private void UpdateColor(Color color)
         {
-            titleContainer.color = new Color(color.r, color.g, color.b, titleContainerAlpha);
+            titleContainer.color = color;
             information.color = color;
         }
 
         /// <summary>
-        /// Displays the text of the localized string using its reference.
-        /// This is mainly called by the <see cref="Popup"/> class to display its content when it's clicked.
+        /// Updates the displayed information and the color of the UI using the popup's information reference and type.
         /// </summary>
-        /// <param name="reference">Reference of the localized string</param>
+        /// <param name="informationReference">Reference to the localized string that holds the information</param>
         /// <param name="type">Type of the popup</param>
-        public void DisplayPopupInfo(string reference, PopupType type)
+        public void UpdatePopupInfo(string informationReference, PopupType type)
         {
-            UpdateText(reference);
+            UpdateInformationText(informationReference);
             UpdateColor(popupColors.GetColor(type));
+        }
+        
+        /// <summary>
+        /// Shows the UI by playing an enter animation and setting the machine title using the given reference.
+        /// </summary>
+        /// <param name="titleReference">Reference to the localized string that holds the machine title</param>
+        public void ShowUI(string titleReference)
+        {
+            UpdateTitle(titleReference);
+            
+            // Set information text and color to default
+            UpdateInformationText();
+            UpdateColor(popupColors.defaultColor);
+            
+            _enterAnimation.Play();
+        }
+
+        /// <summary>
+        /// Hides the UI by playing an exit animation.
+        /// This will ONLY execute if the given reference matches the currently displayed machine title reference
+        /// </summary>
+        /// <param name="titleReference">Reference to the localized string that holds the machine title</param>
+        public void HideUI(string titleReference)
+        {
+            if (titleReference != _localizedMachineTitle.TableEntryReference) return;
+            
+            _exitAnimation.Play();
         }
     }
 }

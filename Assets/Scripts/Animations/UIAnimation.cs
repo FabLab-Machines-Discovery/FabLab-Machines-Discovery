@@ -11,7 +11,7 @@ namespace Animations
     public abstract class UIAnimation<TDesiredValue> : MonoBehaviour, IUIAnimation
     {
         // Properties used for animation
-        [SerializeField] protected UIAnimationProps<TDesiredValue> animationProps;
+        public UIAnimationProps<TDesiredValue> animationProps;
 
         // Used to store the tween for the animation, so you can kill it later
         protected Tween tween;

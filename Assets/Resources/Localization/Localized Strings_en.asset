@@ -147,6 +147,86 @@ MonoBehaviour:
     m_Localized: Loading..
     m_Metadata:
       m_Items: []
+  - m_Id: 5007439829532672
+    m_Localized: 'Type: CNC Router
+
+      Model: 6090Z-VFD1.5KW'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5020929222901760
+    m_Localized: The CNC router is suitable for industry, technology research, artistic
+      creation, teaching, student projects and hobbies
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5026937928286208
+    m_Localized: 'The most commonly used CNC bits are for: Engraving, Cutting & Perforation'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5027943718191104
+    m_Localized: "CNC machining is highly precise and allows improved accuracy by
+      slower processing with a tolerance of \xB10.00508 mm to \xB10.0127 mm"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5030685073342464
+    m_Localized: 'Engraving area: 900x600mm
+
+      Engraving speed: 7,000 ~ 24,000rpm
+
+      Z-axis
+      depth: 125mm
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5031918446182400
+    m_Localized: These are the holders, they prevent unnecessary movement of the
+      materials during the process
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5032197363204096
+    m_Localized: This is the heart of any CNC machine, the spindle!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5034327314661376
+    m_Localized: This CNC machine has 3 axes of operating X, Y & Z, this is necessary
+      for 3D operations.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5034857311109120
+    m_Localized: This is the CNC controller which takes G-code and turns it into
+      motion by controlling the various axis and the spindle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5036769318141952
+    m_Localized: This machine's input file types are 2D, 2.5D and the 3 axis permit
+      it to use 3D. (DXF, DWG, STL, PDF, ect..)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5037982835146752
+    m_Localized: Place the material on the main table
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5038292873904128
+    m_Localized: Fasten the material using the holders
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5039033877397504
+    m_Localized: You can turn the machine on/off from this button
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5039150869118976
+    m_Localized: Never get near the machine head when cutting is in process
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5039489349451776
+    m_Localized: Always wear glasses to protect sight from possible flying particles
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5039886126415872
+    m_Localized: 'Only press this button to stop all motion if: Something gets entangled
+      in the machine OR the machine goes haywire'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

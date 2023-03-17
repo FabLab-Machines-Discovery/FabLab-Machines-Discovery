@@ -61,7 +61,6 @@ namespace Popups
         // Called to initialize some members of this class on Awake
         private void Initialize()
         {
-            // Construct localized strings
             _localizedInformation = new LocalizedString();
             _localizedMachineTitle = new LocalizedString();
             
@@ -76,10 +75,9 @@ namespace Popups
         // Called to create the components needed for enter and exit animations
         private TranslationAnimation CreateTranslationAnimation(Vector3 desiredPosition)
         {
-            // Add translation animation component to object
             var translationAnimation = gameObject.AddComponent<TranslationAnimation>();
 
-            // Initialize component
+            // Initialize component members
             translationAnimation.animationProps = new UIAnimationProps<Vector3>
             {
                 autoPlay = false,
@@ -95,33 +93,27 @@ namespace Popups
         // Update the title text component using reference to a localized string
         private void UpdateTitle(string reference)
         {
-            // Set localized title with the given reference
             _localizedMachineTitle.TableReference = stringTableReference;
             _localizedMachineTitle.TableEntryReference = reference;
             
-            // Get the localized string and update title text component
             machineTitle.text = _localizedMachineTitle.GetLocalizedString();
         }
         
         // Update the information text component to the default
         private void UpdateInformationText()
         {
-            // Set localized information with the default reference
             _localizedInformation.TableReference = stringTableReference;
             _localizedInformation.TableEntryReference = defaultInformationReference;
             
-            // Get the localized string and update information text component
             information.text = _localizedInformation.GetLocalizedString();
         }
 
         // Update the information text component using reference to a localized string
         private void UpdateInformationText(string reference)
         {
-            // Set localized information with the given reference
             _localizedInformation.TableReference = stringTableReference;
             _localizedInformation.TableEntryReference = reference;
             
-            // Get the localized string and update information text component
             information.text = _localizedInformation.GetLocalizedString();
         }
 

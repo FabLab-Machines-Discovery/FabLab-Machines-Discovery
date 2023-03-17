@@ -26,7 +26,7 @@ namespace Onboarding_Scene
         private Vector3 _startPosition;
         
         // Index of the current swipeable panel in the hierarchy
-        private int _currentPanelIndex = 0;
+        private int _currentPanelIndex;
 
         private void Start()
         {
@@ -110,6 +110,8 @@ namespace Onboarding_Scene
                     InvokeOnSwipe(--_currentPanelIndex);
                 }
             }
+            
+            // Tween to position
             transform.DOMoveX(_startPosition.x, swipeDuration);
         }
     }

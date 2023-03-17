@@ -20,21 +20,15 @@ namespace Onboarding_Scene
         private void Start()
         {
             _dots = GetComponentsInChildren<Image>();
-            // Subscribe to the OnSwipe event
             panelSwiper.OnSwipe += UpdatePagination;
         }
 
         private void OnDisable()
         {
-            // Unsubscribe of the OnSwipe event
             panelSwiper.OnSwipe -= UpdatePagination;
         }
         
-        /*
-         * Updates the color of the dots that represent the panels respectively.
-         * The dot that represents the active panel will have the activeColor applied to it.
-         * The dots that represent the other panels will have the inactiveColor applied to them.
-         */
+        // Updates the color of the dots that represent the panels respectively.
         private void UpdatePagination(int activePanelIndex)
         {
             for (int i = 0; i < _dots.Length; i++)

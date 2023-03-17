@@ -16,11 +16,8 @@ namespace Onboarding_Scene
 
         private void Awake()
         {
-            // Get own index in the hierarchy
             _index = transform.GetSiblingIndex();
-            // Get the animations 
             _animations = GetComponentsInChildren<IUIAnimation>();
-            // Subscribe to the OnSwipe event
             owner.OnSwipe += PlayAnimations;
         }
 

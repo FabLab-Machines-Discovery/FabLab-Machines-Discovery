@@ -227,6 +227,57 @@ MonoBehaviour:
       in the machine OR the machine goes haywire'
     m_Metadata:
       m_Items: []
+  - m_Id: 6070854713147392
+    m_Localized: 'Type: Laser Cutter
+
+      Model: GS1610'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6071647281414144
+    m_Localized: Close the lid before using the machine
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6071668563312640
+    m_Localized: 'In case of an incident, Press the emergency button '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6071685344722944
+    m_Localized: 'Keep a safe distance from the machine while it is operating '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6071003099234304
+    m_Localized: 'Laser type: Hermetic and detached CO2 laser tube'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6071254866526208
+    m_Localized: 'Laser Cutter accepts 2D files with extension
+
+      Al, CDR, BMP,
+      JPG, DST, PLT, DXF, DWG, TIFF, PSD'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6071561851830272
+    m_Localized: This is the usb port used to connect the laser cutter to our PC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6071510870065152
+    m_Localized: 'Supported software: CorelDraw, Photoshop, AutoCAD'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6071536837001216
+    m_Localized: 'Cutting speed: 0-36000mm/min
+
+      Engraving speed: 0-64000mm/min'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6135043225878528
+    m_Localized: Industrial chiller prevents the laser cutter from overheating
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6071036213264384
+    m_Localized: 'Laser power: 150 W'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -279,6 +279,11 @@ MonoBehaviour:
     m_Localized: Machine CNC 3 Axes
     m_Metadata:
       m_Items: []
+  - m_Id: 7572065313189888
+    m_Localized: "Vous pouvez r\xE9gler les param\xE8tres machine \xE0 l'aide de
+      cet \xE9cran"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -282,6 +282,10 @@ MonoBehaviour:
     m_Localized: Machine CNC 3 Axes
     m_Metadata:
       m_Items: []
+  - m_Id: 7572065313189888
+    m_Localized: You can adjust the machine's settings using this screen
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

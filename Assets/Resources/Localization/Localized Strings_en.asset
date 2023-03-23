@@ -153,18 +153,13 @@ MonoBehaviour:
       Model: 6090Z-VFD1.5KW'
     m_Metadata:
       m_Items: []
-  - m_Id: 5020929222901760
-    m_Localized: The CNC router is suitable for industry, technology research, artistic
-      creation, teaching, student projects and hobbies
-    m_Metadata:
-      m_Items: []
   - m_Id: 5026937928286208
     m_Localized: 'The most commonly used CNC bits are for: Engraving, Cutting & Perforation'
     m_Metadata:
       m_Items: []
   - m_Id: 5027943718191104
-    m_Localized: "CNC machining is highly precise and allows improved accuracy by
-      slower processing with a tolerance of \xB10.00508 mm to \xB10.0127 mm"
+    m_Localized: "Highly precise and allows improved accuracy by slower processing
+      with a tolerance of \xB10.00508 mm to \xB10.0127 mm"
     m_Metadata:
       m_Items: []
   - m_Id: 5030685073342464
@@ -179,17 +174,17 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5031918446182400
-    m_Localized: These are the holders, they prevent unnecessary movement of the
-      materials during the process
+    m_Localized: These holders prevent unnecessary movement of the materials during
+      the process
     m_Metadata:
       m_Items: []
   - m_Id: 5032197363204096
-    m_Localized: This is the heart of any CNC machine, the spindle!
+    m_Localized: This is the heart of the CNC machine, the spindle!
     m_Metadata:
       m_Items: []
   - m_Id: 5034327314661376
-    m_Localized: This CNC machine has 3 axes of operating X, Y & Z, this is necessary
-      for 3D operations.
+    m_Localized: 'This CNC machine operates on 3 axes: X, Y and Z. This is necessary
+      for 3D operations.'
     m_Metadata:
       m_Items: []
   - m_Id: 5034857311109120
@@ -203,7 +198,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5037982835146752
-    m_Localized: Place the material on the main table
+    m_Localized: Place the material on this main table
     m_Metadata:
       m_Items: []
   - m_Id: 5038292873904128
@@ -219,16 +214,16 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5039489349451776
-    m_Localized: Always wear glasses to protect sight from possible flying particles
+    m_Localized: Always wear glasses to protect your eyes from possible flying particles
     m_Metadata:
       m_Items: []
   - m_Id: 5039886126415872
-    m_Localized: 'Only press this button to stop all motion if: Something gets entangled
-      in the machine OR the machine goes haywire'
+    m_Localized: Press this button to stop all motion if something gets entangled
+      in the machine, or if the machine goes haywire
     m_Metadata:
       m_Items: []
   - m_Id: 6070854713147392
-    m_Localized: 'Type: Laser Cutter
+    m_Localized: 'Type: Laser Cutting
 
       Model: GS1610'
     m_Metadata:
@@ -238,15 +233,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6071668563312640
-    m_Localized: 'In case of an incident, Press the emergency button '
+    m_Localized: In case of an incident, press the emergency button here
     m_Metadata:
       m_Items: []
   - m_Id: 6071685344722944
     m_Localized: 'Keep a safe distance from the machine while it is operating '
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6071003099234304
-    m_Localized: 'Laser type: Hermetic and detached CO2 laser tube'
     m_Metadata:
       m_Items: []
   - m_Id: 6071254866526208
@@ -275,7 +266,20 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6071036213264384
-    m_Localized: 'Laser power: 150 W'
+    m_Localized: Depending on the wanted shape, the process can take from as little
+      as few seconds to multiple hours
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7281857134018560
+    m_Localized: 3D Printer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7281967989473280
+    m_Localized: Laser Cutting Machine
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7282948307369984
+    m_Localized: Machine CNC 3 Axes
     m_Metadata:
       m_Items: []
   references:

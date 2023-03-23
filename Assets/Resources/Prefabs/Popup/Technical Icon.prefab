@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8136770400578096678}
   - component: {fileID: 335075679718070988}
   - component: {fileID: 5918771572796215816}
+  - component: {fileID: 3938838566511024590}
   m_Layer: 5
   m_Name: Technical Icon
   m_TagString: Untagged
@@ -37,10 +38,10 @@ RectTransform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.4617865, y: 0.46688187}
-  m_AnchorMax: {x: 0.53869116, y: 0.532332}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 0.05, y: 0.05}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5415755247203623578
 CanvasRenderer:
@@ -72,7 +73,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 20c16966cb3b3bd4ab08d89cc5ce84dc, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -105,7 +106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 155968cf82e54f65a49c2c7522628f62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reference: Missing Reference
+  informationReference: Missing Reference
   type: 2
 --- !u!114 &5918771572796215816
 MonoBehaviour:
@@ -163,6 +164,36 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 3938838566511024590}
+        m_TargetAssemblyTypeName: Animations.PopUpAnimation, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &3938838566511024590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5415755247203623583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4410a528168b4fe4bc536d3cc82f6c3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationProps:
+    autoPlay: 0
+    desiredValue: {x: 1, y: 1, z: 1}
+    duration: 0.2
+    delay: 0
+  divider: 8
 --- !u!1 &5415755248660539090
 GameObject:
   m_ObjectHideFlags: 0
@@ -198,7 +229,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.1522142, y: 0.1543298}
   m_AnchorMax: {x: 0.8411362, y: 0.84571326}
-  m_AnchoredPosition: {x: 0.00033180416, y: -0.00003278628}
+  m_AnchoredPosition: {x: 0.00033187866, y: -0.000032424927}
   m_SizeDelta: {x: 0.13080305, y: 0.06535698}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5415755248660539085
@@ -231,7 +262,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 3b4e0da8ffc32b345ad404cc9a1a8ed4, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1

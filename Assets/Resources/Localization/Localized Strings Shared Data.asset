@@ -252,6 +252,22 @@ MonoBehaviour:
     m_Key: G1S6 U2
     m_Metadata:
       m_Items: []
+  - m_Id: 9755192924139520
+    m_Key: VuforiaScene Popup UI/Canvas/Camera Access Error/Error Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9755922699481088
+    m_Key: VuforiaScene Popup UI/Canvas/Camera Access Error/Error Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9756084515729408
+    m_Key: VuforiaScene Popup UI/Canvas/Camera Access Error/Request Button/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9758450342260736
+    m_Key: VuforiaScene Popup UI/Canvas/Unknown Access Error/Error Title
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

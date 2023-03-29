@@ -284,6 +284,23 @@ MonoBehaviour:
       cet \xE9cran"
     m_Metadata:
       m_Items: []
+  - m_Id: 9755192924139520
+    m_Localized: "L'acc\xE8s \xE0 la cam\xE9ra est requis"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9755922699481088
+    m_Localized: "Nous avons besoin d'acc\xE9der \xE0 la cam\xE9ra pour pouvoir reconna\xEEtre
+      les tags des machines et afficher les popups"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9756084515729408
+    m_Localized: "Accorder l'acc\xE8s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9758450342260736
+    m_Localized: "Quelque chose s'est mal pass\xE9"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

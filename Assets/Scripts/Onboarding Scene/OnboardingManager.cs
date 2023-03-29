@@ -35,7 +35,6 @@ namespace Onboarding_Scene
             // Wait for the duration then switch from logo panel to start panel
             yield return new WaitForSeconds(logoPanelDuration);
             logoPanel.SetActive(false);
-            startPanel.SetActive(true);
         }
 
         public void SwitchToTutorialPanels()

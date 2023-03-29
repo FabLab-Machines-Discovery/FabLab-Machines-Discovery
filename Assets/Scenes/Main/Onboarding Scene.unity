@@ -1140,8 +1140,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 451728882}
-  - component: {fileID: 451728884}
-  - component: {fileID: 451728883}
   - component: {fileID: 451728885}
   m_Layer: 5
   m_Name: Panel 2
@@ -1174,44 +1172,6 @@ RectTransform:
   m_AnchoredPosition: {x: 1080, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &451728883
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 451728881}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &451728884
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 451728881}
-  m_CullTransparentMesh: 1
 --- !u!114 &451728885
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1325,8 +1285,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 710137026}
-  - component: {fileID: 710137028}
-  - component: {fileID: 710137027}
   - component: {fileID: 710137029}
   m_Layer: 5
   m_Name: Panel 3
@@ -1367,44 +1325,6 @@ RectTransform:
   m_AnchoredPosition: {x: 2160, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &710137027
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 710137025}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &710137028
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 710137025}
-  m_CullTransparentMesh: 1
 --- !u!114 &710137029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1795,7 +1715,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   logoPanel: {fileID: 1728550930}
-  logoPanelDuration: 4.5
+  logoPanelDuration: 4.1
   startPanel: {fileID: 1575007670}
   tutorialPanel: {fileID: 2143811126}
   panelPagination: {fileID: 887284075}
@@ -2391,8 +2311,6 @@ GameObject:
   - component: {fileID: 981158340}
   - component: {fileID: 981158339}
   - component: {fileID: 981158342}
-  - component: {fileID: 981158344}
-  - component: {fileID: 981158343}
   - component: {fileID: 981158345}
   m_Layer: 5
   m_Name: Button caption
@@ -2468,7 +2386,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 47.55
+  m_fontSize: 47.6
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2556,40 +2474,6 @@ MonoBehaviour:
           m_WaitForCompletion: 0
           m_LocalVariables: []
         m_PropertyPath: m_text
---- !u!114 &981158343
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 981158337}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07a838846ce34518bbea23cebeb9a101, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animationProps:
-    autoPlay: 1
-    desiredValue: {x: 0, y: -75, z: 0}
-    duration: 0.5
-    delay: 1
---- !u!114 &981158344
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 981158337}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07a838846ce34518bbea23cebeb9a101, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animationProps:
-    autoPlay: 1
-    desiredValue: {x: 0, y: 75, z: 0}
-    duration: 0
-    delay: 0
 --- !u!114 &981158345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2606,7 +2490,7 @@ MonoBehaviour:
     autoPlay: 1
     desiredValue: 1
     duration: 0.5
-    delay: 1
+    delay: 5.5
 --- !u!114 &989050249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2717,7 +2601,7 @@ MonoBehaviour:
     autoPlay: 1
     desiredValue: 1
     duration: 1.5
-    delay: 0
+    delay: 4.5
   wipeFillMethod: 0
   wipeType: 1
 --- !u!1 &1187254971
@@ -3314,6 +3198,7 @@ MonoBehaviour:
     desiredValue: {x: 0, y: -75, z: 0}
     duration: 0.5
     delay: 0.5
+  isRelative: 1
 --- !u!114 &1291871011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3331,6 +3216,7 @@ MonoBehaviour:
     desiredValue: {x: 0, y: 75, z: 0}
     duration: 0
     delay: 0
+  isRelative: 1
 --- !u!1 &1415271507 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6513451014414645755, guid: b28ddc8583350b3408dbd67279ee8d58, type: 3}
@@ -3506,7 +3392,7 @@ MonoBehaviour:
     autoPlay: 1
     desiredValue: {x: 1, y: 1, z: 1}
     duration: 0.3
-    delay: 1
+    delay: 5.5
   divider: 10
 --- !u!1 &1566917833
 GameObject:
@@ -3709,15 +3595,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1575007671}
-  - component: {fileID: 1575007673}
-  - component: {fileID: 1575007672}
   m_Layer: 5
   m_Name: Start Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1575007671
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3743,44 +3627,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1575007672
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1575007670}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1575007673
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1575007670}
-  m_CullTransparentMesh: 1
 --- !u!1 &1650475144
 GameObject:
   m_ObjectHideFlags: 0
@@ -4312,7 +4158,7 @@ MonoBehaviour:
     autoPlay: 1
     desiredValue: 1
     duration: 0.5
-    delay: 0.5
+    delay: 5
 --- !u!114 &1696508410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4367,7 +4213,8 @@ MonoBehaviour:
     autoPlay: 1
     desiredValue: {x: 0, y: -75, z: 0}
     duration: 0.5
-    delay: 0.5
+    delay: 5
+  isRelative: 1
 --- !u!114 &1696508412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4385,6 +4232,7 @@ MonoBehaviour:
     desiredValue: {x: 0, y: 75, z: 0}
     duration: 0
     delay: 0
+  isRelative: 1
 --- !u!1 &1728550930
 GameObject:
   m_ObjectHideFlags: 0
@@ -4394,8 +4242,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1728550931}
-  - component: {fileID: 1728550933}
-  - component: {fileID: 1728550932}
   m_Layer: 5
   m_Name: Logo Panel
   m_TagString: Untagged
@@ -4424,44 +4270,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1728550932
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1728550930}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1728550933
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1728550930}
-  m_CullTransparentMesh: 1
 --- !u!1 &1850384259
 GameObject:
   m_ObjectHideFlags: 0
@@ -5020,8 +4828,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1931674590}
-  - component: {fileID: 1931674592}
-  - component: {fileID: 1931674591}
   - component: {fileID: 1931674593}
   m_Layer: 5
   m_Name: Panel 1
@@ -5054,44 +4860,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0.5}
---- !u!114 &1931674591
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1931674589}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1931674592
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1931674589}
-  m_CullTransparentMesh: 1
 --- !u!114 &1931674593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5260,7 +5028,7 @@ MonoBehaviour:
     autoPlay: 1
     desiredValue: 1
     duration: 0.5
-    delay: 0.75
+    delay: 5.25
 --- !u!114 &1972305119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5315,7 +5083,8 @@ MonoBehaviour:
     autoPlay: 1
     desiredValue: {x: 0, y: -75, z: 0}
     duration: 0.5
-    delay: 0.75
+    delay: 5.25
+  isRelative: 1
 --- !u!114 &1972305121
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5333,6 +5102,7 @@ MonoBehaviour:
     desiredValue: {x: 0, y: 75, z: 0}
     duration: 0
     delay: 0
+  isRelative: 1
 --- !u!1 &2016764028
 GameObject:
   m_ObjectHideFlags: 0
@@ -5684,6 +5454,7 @@ MonoBehaviour:
     desiredValue: {x: 0, y: -75, z: 0}
     duration: 0.5
     delay: 0.75
+  isRelative: 1
 --- !u!114 &2128771750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5701,6 +5472,7 @@ MonoBehaviour:
     desiredValue: {x: 0, y: 75, z: 0}
     duration: 0
     delay: 0
+  isRelative: 1
 --- !u!1 &2143811126
 GameObject:
   m_ObjectHideFlags: 0

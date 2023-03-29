@@ -154,20 +154,15 @@ MonoBehaviour:
     m_Localized: "Type: Routeur CNC\nMod\xE8le: 6090Z-VFD1.5KW"
     m_Metadata:
       m_Items: []
-  - m_Id: 5020929222901760
-    m_Localized: "Le routeur CNC convient \xE0 l'industrie, \xE0 la recherche technologique,
-      \xE0 la cr\xE9ation artistique, \xE0 l'enseignement, aux projets d'\xE9tudiants"
-    m_Metadata:
-      m_Items: []
   - m_Id: 5026937928286208
     m_Localized: "Les forets du CNC les plus utilis\xE9s sont pour: La Gravure, La
       Coupure & La Perforation"
     m_Metadata:
       m_Items: []
   - m_Id: 5027943718191104
-    m_Localized: "L'usinage CNC est tr\xE8s pr\xE9cis et permet une pr\xE9cision
-      am\xE9lior\xE9e gr\xE2ce \xE0 un traitement lent avec une tol\xE9rance de \xB1
-      0,00508 mm \xE0 \xB1 0,0127 mm"
+    m_Localized: "Tr\xE8s pr\xE9cis et permet une pr\xE9cision am\xE9lior\xE9e gr\xE2ce
+      \xE0 un traitement lent avec une tol\xE9rance de \xB1 0,00508 mm \xE0 \xB1
+      0,0127 mm"
     m_Metadata:
       m_Items: []
   - m_Id: 5030685073342464
@@ -176,21 +171,20 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5031918446182400
-    m_Localized: "Ce sont les supports, ils emp\xEAchent le mouvements des mat\xE9riaux
-      lors d'usinage"
+    m_Localized: "Ces supports emp\xEAchent le mouvements des mat\xE9riaux lors d'usinage"
     m_Metadata:
       m_Items: []
   - m_Id: 5032197363204096
-    m_Localized: La broche, le coeur de toutes les machines CNC
+    m_Localized: Voici la broche, le coeur de la machines CNC
     m_Metadata:
       m_Items: []
   - m_Id: 5034327314661376
-    m_Localized: Il s'agit de 3 axes X, Y & Z, et cela permet de achever des operations
-      3D.
+    m_Localized: 'Cette machine CNC fonctionne sur 3 axes : X, Y et Z. Ceci permet
+      d''achever les operations 3D.'
     m_Metadata:
       m_Items: []
   - m_Id: 5034857311109120
-    m_Localized: "Le CNC Controller, prend le G-code et le transforme en mouvement
+    m_Localized: "Le CNC Controller prend le G-code et le transforme en mouvement
       en contr\xF4lant les diff\xE9rents axes et la broche"
     m_Metadata:
       m_Items: []
@@ -200,7 +194,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5037982835146752
-    m_Localized: "Placez le mat\xE9riel sur la plateforme"
+    m_Localized: "Placez le mat\xE9riel sur cette plateforme"
     m_Metadata:
       m_Items: []
   - m_Id: 5038292873904128
@@ -217,17 +211,17 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5039489349451776
-    m_Localized: "Portez toujours des lunettes de protection pour prot\xE9ger la
-      vue"
+    m_Localized: "Portez toujours des lunettes de protection pour prot\xE9ger vos
+      yeux d'\xE9ventuelles particules volantes"
     m_Metadata:
       m_Items: []
   - m_Id: 5039886126415872
-    m_Localized: "Appuyez sur ce bouton pour arr\xEAter tout fonctionnement uniquement
-      si: \rQuelque chose s'emm\xEAle dans la machine\r ou bien la machine se d\xE9traque"
+    m_Localized: "Appuyez sur ce bouton pour arr\xEAter tout mouvement si quelque
+      chose s'emm\xEAle dans la machine ou si la machine se d\xE9traque"
     m_Metadata:
       m_Items: []
   - m_Id: 6070854713147392
-    m_Localized: "Type: d\xE9coupeuse laser\nmod\xE8le: GS1610"
+    m_Localized: "Type: D\xE9coupe Laser\nMod\xE8le: GS1610"
     m_Metadata:
       m_Items: []
   - m_Id: 6071647281414144
@@ -235,11 +229,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6071668563312640
-    m_Localized: En cas d'incident, appuyez sur le bouton d'urgence
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6071003099234304
-    m_Localized: "Type de laser: Tube laser CO2 herm\xE9tique et d\xE9tach\xE9"
+    m_Localized: En cas d'incident, appuyez sur le bouton d'urgence ici
     m_Metadata:
       m_Items: []
   - m_Id: 6071254866526208
@@ -273,7 +263,25 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6071036213264384
-    m_Localized: 'puissance du laser: 150 W'
+    m_Localized: "Selon la forme souhait\xE9e, le processus peut prendre de quelques
+      secondes \xE0 plusieurs heures"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7281857134018560
+    m_Localized: Imprimante 3D
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7281967989473280
+    m_Localized: "Machine D\xE9coupe Laser"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7282948307369984
+    m_Localized: Machine CNC 3 Axes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7572065313189888
+    m_Localized: "Vous pouvez r\xE9gler les param\xE8tres machine \xE0 l'aide de
+      cet \xE9cran"
     m_Metadata:
       m_Items: []
   references:

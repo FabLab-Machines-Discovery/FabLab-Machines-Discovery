@@ -286,6 +286,23 @@ MonoBehaviour:
     m_Localized: You can adjust the machine's settings using this screen
     m_Metadata:
       m_Items: []
+  - m_Id: 9755192924139520
+    m_Localized: Camera Access Is Required
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9755922699481088
+    m_Localized: We need access to the camera to be able to recognize machines tags
+      and display popups
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9756084515729408
+    m_Localized: Grant Access
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9758450342260736
+    m_Localized: Something Went Wrong
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

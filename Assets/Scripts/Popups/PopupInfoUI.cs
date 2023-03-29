@@ -8,7 +8,7 @@ namespace Popups
 {
     public class PopupInfoUI : MonoBehaviour
     {
-        // Instance for Singleton pattern
+        // Instance - Singleton pattern
         public static PopupInfoUI Instance { get; private set; }
 
         [SerializeField] [Tooltip("Duration of the enter/exit translation animation")]

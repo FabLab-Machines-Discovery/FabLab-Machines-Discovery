@@ -9,6 +9,7 @@ namespace Popups
         public Color useInstructionColor;
         public Color technicalColor;
         public Color safetyRiskColor;
+        public Color simulationColor;
         public Color defaultColor;
 
         // Get a color depending on type of popup
@@ -24,6 +25,8 @@ namespace Popups
                     return technicalColor;
                 case PopupType.SafetyRisk:
                     return safetyRiskColor;
+                case PopupType.Simulation:
+                    return simulationColor;
                 default:
                     return defaultColor;
             }

@@ -4,7 +4,7 @@ namespace Popups
 {
     public enum PopupType
     {
-        General, UseInstruction, Technical, SafetyRisk
+        General, UseInstruction, Technical, SafetyRisk, Simulation
     }
     public class Popup : MonoBehaviour
     { 

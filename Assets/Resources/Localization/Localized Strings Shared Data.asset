@@ -272,6 +272,18 @@ MonoBehaviour:
     m_Key: R3N1 SIMULATION
     m_Metadata:
       m_Items: []
+  - m_Id: 11995128423346176
+    m_Key: Onboarding Scene/Canvas/Tutorial Panels/Panel 4/Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11996281424932864
+    m_Key: Onboarding Scene/Canvas/Tutorial Panels/Panel 4/Subtitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12011444974743552
+    m_Key: Onboarding Scene/Canvas/Tutorial Panels/Panel 3/Simulation Info Text
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

@@ -306,6 +306,19 @@ MonoBehaviour:
       couche par couche, sur la base d'un dessin num\xE9rique."
     m_Metadata:
       m_Items: []
+  - m_Id: 11995128423346176
+    m_Localized: "Vous n'\xEAtes qu'\xE0 \nun clic"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11996281424932864
+    m_Localized: "Pour utiliser nos fonctionnalit\xE9s de r\xE9alit\xE9 augment\xE9e,
+      nous avons besoin d'acc\xE9der \xE0 votre cam\xE9ra."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12011444974743552
+    m_Localized: Simulation de machines
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

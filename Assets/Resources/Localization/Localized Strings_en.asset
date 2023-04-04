@@ -308,6 +308,18 @@ MonoBehaviour:
       by layer, based on a digital design.
     m_Metadata:
       m_Items: []
+  - m_Id: 11995128423346176
+    m_Localized: You're Just One Click Away
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11996281424932864
+    m_Localized: To use our augmented reality features, we need access to your camera.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12011444974743552
+    m_Localized: Machine Simulation
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

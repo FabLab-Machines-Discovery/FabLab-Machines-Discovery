@@ -301,6 +301,11 @@ MonoBehaviour:
     m_Localized: "Quelque chose s'est mal pass\xE9"
     m_Metadata:
       m_Items: []
+  - m_Id: 10923017160192000
+    m_Localized: "L'objet est imprim\xE9 par fusion et extrusion d'un mat\xE9riau
+      couche par couche, sur la base d'un dessin num\xE9rique."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace Popups
@@ -12,31 +13,21 @@ namespace Popups
         public string informationReference = "Missing Reference";
         [Tooltip("Type of the popup")]
         public PopupType type;
-        [Tooltip("GameObject that plays the machine's simulation. It requires an Animator component attached to it")]
-        public GameObject simulationObject;
-        
-        private Animator _animator;
+        [Tooltip("Script that plays the machine's simulation. It requires an Animator component attached to it")]
+        public MachineSimulation simulation;
 
         /// <summary>
-        /// Updates the UI of <see cref="PopupInfoUI"/> using this popup's information reference and type
+        /// Updates the UI of <see cref="PopupInfoUI"/> using this popup's information reference and type.
+        /// If the popup type is "Simulation", it will also play the machine's simulation.
         /// </summary>
-        public void SetPopupInfo()
+        public void ShowContents()
         {
-            if (!simulationObject.activeSelf) // Check if the GameObject is inactive
-            {
-                simulationObject.SetActive(true);
-            }
-
             PopupInfoUI.Instance.UpdatePopupInfo(informationReference, type);
-        }
-
-        public void OnValidate()
-        {
-            if(simulationObject == null) return;
-            _animator = simulationObject.GetComponent<Animator>();
-            if (_animator != null) return;
-            simulationObject = null;
-            Debug.LogWarning("Your gameObject doesn't contain an Animator component");
+            
+            if (type == PopupType.Simulation)
+            {
+                simulation.Play();
+            }
         }
     }
 }

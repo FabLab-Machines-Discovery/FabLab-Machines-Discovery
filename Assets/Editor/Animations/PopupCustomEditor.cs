@@ -10,13 +10,13 @@ namespace Editor.Animations
         public override void OnInspectorGUI()
         {
             serializedObject.Update();
-            DrawPropertiesExcluding(serializedObject,"simulationObject");
+            DrawPropertiesExcluding(serializedObject,"simulation");
             var typeProp = serializedObject.FindProperty("type");
             var type = (PopupType)typeProp.enumValueIndex;
 
             if (type == PopupType.Simulation)
             {
-                EditorGUILayout.PropertyField(serializedObject.FindProperty("simulationObject"));
+                EditorGUILayout.PropertyField(serializedObject.FindProperty("simulation"));
             }
 
             serializedObject.ApplyModifiedProperties();

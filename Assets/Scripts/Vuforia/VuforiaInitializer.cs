@@ -36,6 +36,8 @@ namespace Vuforia
         // Unsubscribe from Vuforia events
         private void OnDestroy()
         {
+            if (VuforiaApplication.Instance == null) return;
+            
             VuforiaApplication.Instance.OnVuforiaInitialized -= HandleInitializationError;
             VuforiaApplication.Instance.OnVuforiaStarted -= DisableLoadingScreen;
         }

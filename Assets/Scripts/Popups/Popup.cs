@@ -26,7 +26,7 @@ namespace Popups
             
             if (type == PopupType.Simulation)
             {
-                simulation.Play();
+                simulation.Play(this);
             }
         }
     }

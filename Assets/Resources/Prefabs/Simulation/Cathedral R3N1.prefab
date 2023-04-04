@@ -1399,6 +1399,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7495884691018379254}
   - component: {fileID: 3602683836597179216}
+  - component: {fileID: 6047079155225890633}
   m_Layer: 0
   m_Name: Cathedral R3N1
   m_TagString: Untagged
@@ -1415,7 +1416,7 @@ Transform:
   m_GameObject: {fileID: 8919315657097962692}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 0, z: 1}
+  m_LocalScale: {x: 0, y: 0.0001, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 9178715362497105144}
@@ -1442,6 +1443,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &6047079155225890633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8919315657097962692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1adee214b7584591a8da9abfc2b792f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8976971636922900920
 GameObject:
   m_ObjectHideFlags: 0

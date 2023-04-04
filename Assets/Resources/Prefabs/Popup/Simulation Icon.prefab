@@ -184,6 +184,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   informationReference: Missing Reference
   type: 4
+  simulation: {fileID: 0}
 --- !u!114 &7379781246386348674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -230,7 +231,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8255403072608944751}
         m_TargetAssemblyTypeName: Popups.Popup, Assembly-CSharp
-        m_MethodName: SetPopupInfo
+        m_MethodName: ShowContents
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

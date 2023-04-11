@@ -10,7 +10,7 @@ EditorBuildSettings:
     guid: e8ce08633f403f6499d58c7e62704970
   - enabled: 1
     path: Assets/Scenes/Main/VuforiaScene.unity
-    guid: 973e00e92b8621e47874ac9c46a12b6d
+    guid: 0e63cac071207eb41b2efc249d1f6ddd
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: cd7e4f653df79a248853ebf1031a0740, type: 2}
     com.unity.localization.settings: {fileID: 11400000, guid: f87da3946eb3d154b896c3b9a9a24c96, type: 2}

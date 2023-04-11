@@ -320,6 +320,10 @@ MonoBehaviour:
     m_Localized: Machine Simulation
     m_Metadata:
       m_Items: []
+  - m_Id: 14590908220928000
+    m_Localized: Scan a machine's tag to start
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

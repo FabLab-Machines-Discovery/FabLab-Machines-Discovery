@@ -284,6 +284,10 @@ MonoBehaviour:
     m_Key: Onboarding Scene/Canvas/Tutorial Panels/Panel 3/Simulation Info Text
     m_Metadata:
       m_Items: []
+  - m_Id: 14590908220928000
+    m_Key: VuforiaScene/Canvas/Camera Frame/Text (TMP)
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

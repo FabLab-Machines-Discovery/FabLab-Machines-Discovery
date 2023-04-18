@@ -324,6 +324,11 @@ MonoBehaviour:
     m_Localized: Scan a machine's tag to start
     m_Metadata:
       m_Items: []
+  - m_Id: 17018872212582400
+    m_Localized: This machine uses a laser beam to cut or engrave materials with
+      precision.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

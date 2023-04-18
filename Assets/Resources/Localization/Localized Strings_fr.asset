@@ -323,6 +323,11 @@ MonoBehaviour:
     m_Localized: Scannez le tag d'une machine
     m_Metadata:
       m_Items: []
+  - m_Id: 17018872212582400
+    m_Localized: "Cette machine utilise un laser pour d\xE9couper ou graver des mat\xE9riaux
+      avec pr\xE9cision."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

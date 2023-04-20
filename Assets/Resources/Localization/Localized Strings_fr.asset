@@ -328,6 +328,11 @@ MonoBehaviour:
       avec pr\xE9cision."
     m_Metadata:
       m_Items: []
+  - m_Id: 17805253687996416
+    m_Localized: "Cette machine peut sculpter ou graver du bois ou d'autres mat\xE9riaux.
+      Il suit les instructions programm\xE9es par l'utilisateur."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

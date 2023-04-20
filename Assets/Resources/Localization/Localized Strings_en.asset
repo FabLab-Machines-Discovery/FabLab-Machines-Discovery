@@ -329,6 +329,11 @@ MonoBehaviour:
       precision.
     m_Metadata:
       m_Items: []
+  - m_Id: 17805253687996416
+    m_Localized: This machine can carve or engrave wood or other materials. It follows
+      instructions that are programmed by the user.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

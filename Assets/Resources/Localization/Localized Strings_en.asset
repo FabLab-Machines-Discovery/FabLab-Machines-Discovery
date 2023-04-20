@@ -22,10 +22,6 @@ MonoBehaviour:
     m_Localized: FabLab Machines Discovery
     m_Metadata:
       m_Items: []
-  - m_Id: 314268754817024
-    m_Localized: English Information
-    m_Metadata:
-      m_Items: []
   - m_Id: 1002068167426048
     m_Localized: Augment your FabLab experience
     m_Metadata:
@@ -56,7 +52,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1006915461644288
-    m_Localized: Think Like An Expert
+    m_Localized: Access Wide Variety Of Information
     m_Metadata:
       m_Items: []
   - m_Id: 1007296543522816
@@ -82,6 +78,260 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 1008037194694656
     m_Localized: Start Camera
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2878590432931840
+    m_Localized: Click on a popup to display its content
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3199153097502720
+    m_Localized: 'Brand: Raise3D
+
+      Model: N1'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3199524914163712
+    m_Localized: 3D printing produces very complex shapes that would be otherwise
+      impossible to construct by hand
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3200241120931840
+    m_Localized: You can adjust the machine's settings using this screen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3200538216067072
+    m_Localized: This part is responsible of printing the object
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3201202396688384
+    m_Localized: Depending on the object, 3D printing can take from as little as
+      30 minutes to several days
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3201503790985216
+    m_Localized: 'Build volume: 205x205x205 mm
+
+      Printing Speed: 10 - 150 mm/s'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3202201031110656
+    m_Localized: This is the printing surface
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3202965635952640
+    m_Localized: Using "ideaMaker", you can import an .stl or .obj file and prepare
+      it for printing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3203835165503488
+    m_Localized: Using this USB slot, you can import your prepared model file
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3204578257760256
+    m_Localized: You can turn the machine on/off from this button
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3204757300015104
+    m_Localized: You can refill the machine's filament from here
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3204926280134656
+    m_Localized: Do not shutdown the machine while printing is in progress
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3205057553461248
+    m_Localized: Wait at least 20 minutes for the machine to cool off before shutdown
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4281610181898240
+    m_Localized: Loading..
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5007439829532672
+    m_Localized: 'Type: CNC Router
+
+      Model: 6090Z-VFD1.5KW'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5026937928286208
+    m_Localized: 'The most commonly used CNC bits are for: Engraving, Cutting & Perforation'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5027943718191104
+    m_Localized: "Highly precise and allows improved accuracy by slower processing
+      with a tolerance of \xB10.00508 mm to \xB10.0127 mm"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5030685073342464
+    m_Localized: 'Engraving area: 900x600mm
+
+      Engraving speed: 7,000 ~ 24,000rpm
+
+      Z-axis
+      depth: 125mm
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5031918446182400
+    m_Localized: These holders prevent unnecessary movement of the materials during
+      the process
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5032197363204096
+    m_Localized: This is the heart of the CNC machine, the spindle!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5034327314661376
+    m_Localized: 'This CNC machine operates on 3 axes: X, Y and Z. This is necessary
+      for 3D operations.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5034857311109120
+    m_Localized: This is the CNC controller which takes G-code and turns it into
+      motion by controlling the various axis and the spindle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5036769318141952
+    m_Localized: This machine's input file types are 2D, 2.5D and the 3 axis permit
+      it to use 3D. (DXF, DWG, STL, PDF, ect..)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5037982835146752
+    m_Localized: Place the material on this main table
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5038292873904128
+    m_Localized: Fasten the material using the holders
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5039033877397504
+    m_Localized: You can turn the machine on/off from this button
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5039150869118976
+    m_Localized: Never get near the machine head when cutting is in process
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5039489349451776
+    m_Localized: Always wear glasses to protect your eyes from possible flying particles
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5039886126415872
+    m_Localized: Press this button to stop all motion if something gets entangled
+      in the machine, or if the machine goes haywire
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6070854713147392
+    m_Localized: 'Type: Laser Cutting
+
+      Model: GS1610'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6071647281414144
+    m_Localized: Close the lid before using the machine
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6071668563312640
+    m_Localized: In case of an incident, press the emergency button here
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6071685344722944
+    m_Localized: 'Keep a safe distance from the machine while it is operating '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6071254866526208
+    m_Localized: 'Laser Cutter accepts 2D files with extension
+
+      Al, CDR, BMP,
+      JPG, DST, PLT, DXF, DWG, TIFF, PSD'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6071561851830272
+    m_Localized: This is the usb port used to connect the laser cutter to our PC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6071510870065152
+    m_Localized: 'Supported software: CorelDraw, Photoshop, AutoCAD'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6071536837001216
+    m_Localized: 'Cutting speed: 0-36000mm/min
+
+      Engraving speed: 0-64000mm/min'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6135043225878528
+    m_Localized: Industrial chiller prevents the laser cutter from overheating
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6071036213264384
+    m_Localized: Depending on the wanted shape, the process can take from as little
+      as few seconds to multiple hours
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7281857134018560
+    m_Localized: 3D Printer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7281967989473280
+    m_Localized: Laser Cutting Machine
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7282948307369984
+    m_Localized: Machine CNC 3 Axes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7572065313189888
+    m_Localized: You can adjust the machine's settings using this screen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9755192924139520
+    m_Localized: Camera Access Is Required
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9755922699481088
+    m_Localized: We need access to the camera to be able to recognize machines tags
+      and display popups
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9756084515729408
+    m_Localized: Grant Access
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9758450342260736
+    m_Localized: Something Went Wrong
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10923017160192000
+    m_Localized: The object is printed by melting and extruding a material layer
+      by layer, based on a digital design.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11995128423346176
+    m_Localized: You're Just One Click Away
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11996281424932864
+    m_Localized: To use our augmented reality features, we need access to your camera.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12011444974743552
+    m_Localized: Machine Simulation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14590908220928000
+    m_Localized: Scan a machine's tag to start
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17018872212582400
+    m_Localized: This machine uses a laser beam to cut or engrave materials with
+      precision.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17805253687996416
+    m_Localized: This machine can carve or engrave wood or other materials. It follows
+      instructions that are programmed by the user.
     m_Metadata:
       m_Items: []
   references:

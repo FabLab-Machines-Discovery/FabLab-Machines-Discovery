@@ -19,10 +19,6 @@ MonoBehaviour:
     m_Key: Onboarding Scene/Canvas/Start Panel/Title
     m_Metadata:
       m_Items: []
-  - m_Id: 314268754817024
-    m_Key: Popup Example
-    m_Metadata:
-      m_Items: []
   - m_Id: 1002068167426048
     m_Key: Onboarding Scene/Canvas/Start Panel/Subtitle
     m_Metadata:
@@ -78,6 +74,226 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 1008037194694656
     m_Key: Onboarding Scene/Canvas/Tutorial Panels/Panel 3/Start Button/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2878590432931840
+    m_Key: Popup Default
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3199153097502720
+    m_Key: R3N1 G1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3199524914163712
+    m_Key: R3N1 G2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3200241120931840
+    m_Key: R3N1 U1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3200538216067072
+    m_Key: R3N1 G3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3201202396688384
+    m_Key: R3N1 G4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3201503790985216
+    m_Key: R3N1 T1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3202201031110656
+    m_Key: R3N1 G5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3202965635952640
+    m_Key: R3N1 T2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3203835165503488
+    m_Key: R3N1 T3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3204578257760256
+    m_Key: R3N1 U2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3204757300015104
+    m_Key: R3N1 U3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3204926280134656
+    m_Key: R3N1 S1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3205057553461248
+    m_Key: R3N1 S2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4281610181898240
+    m_Key: Loading
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5007439829532672
+    m_Key: C6N9 G1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5026937928286208
+    m_Key: C6N9 G2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5027943718191104
+    m_Key: C6N9 T1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5030685073342464
+    m_Key: C6N9 T2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5031918446182400
+    m_Key: C6N9 G3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5032197363204096
+    m_Key: C6N9 G4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5034327314661376
+    m_Key: C6N9 G5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5034857311109120
+    m_Key: C6N9 G6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5036769318141952
+    m_Key: C6N9 T3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5037982835146752
+    m_Key: C6N9 U1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5038292873904128
+    m_Key: C6N9 U2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5039033877397504
+    m_Key: C6N9 U3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5039150869118976
+    m_Key: C6N9 S1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5039489349451776
+    m_Key: C6N9 S2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5039886126415872
+    m_Key: C6N9 S3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6070854713147392
+    m_Key: G1S6 G1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6071036213264384
+    m_Key: G1S6 G2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6071254866526208
+    m_Key: G1S6 T1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6071510870065152
+    m_Key: G1S6 T2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6071536837001216
+    m_Key: G1S6 T3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6071561851830272
+    m_Key: G1S6 U1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6071647281414144
+    m_Key: G1S6 S1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6071668563312640
+    m_Key: G1S6 S2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6071685344722944
+    m_Key: G1S6 S3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6135043225878528
+    m_Key: G1S6 G3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7281857134018560
+    m_Key: R3N1 TITLE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7281967989473280
+    m_Key: G1S6 TITLE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7282948307369984
+    m_Key: C6N9 TITLE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7572065313189888
+    m_Key: G1S6 U2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9755192924139520
+    m_Key: VuforiaScene Popup UI/Canvas/Camera Access Error/Error Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9755922699481088
+    m_Key: VuforiaScene Popup UI/Canvas/Camera Access Error/Error Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9756084515729408
+    m_Key: VuforiaScene Popup UI/Canvas/Camera Access Error/Request Button/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9758450342260736
+    m_Key: VuforiaScene Popup UI/Canvas/Unknown Access Error/Error Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10923017160192000
+    m_Key: R3N1 SIMULATION
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11995128423346176
+    m_Key: Onboarding Scene/Canvas/Tutorial Panels/Panel 4/Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11996281424932864
+    m_Key: Onboarding Scene/Canvas/Tutorial Panels/Panel 4/Subtitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12011444974743552
+    m_Key: Onboarding Scene/Canvas/Tutorial Panels/Panel 3/Simulation Info Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14590908220928000
+    m_Key: VuforiaScene/Canvas/Camera Frame/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17018872212582400
+    m_Key: G1S6 SIMULATION
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17805253687996416
+    m_Key: C6N9 SIMULATION
     m_Metadata:
       m_Items: []
   m_Metadata:

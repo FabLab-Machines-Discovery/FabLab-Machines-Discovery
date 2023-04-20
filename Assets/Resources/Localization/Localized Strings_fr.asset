@@ -22,10 +22,6 @@ MonoBehaviour:
     m_Localized: "D\xE9couverte des machines FabLab\r"
     m_Metadata:
       m_Items: []
-  - m_Id: 314268754817024
-    m_Localized: French Information
-    m_Metadata:
-      m_Items: []
   - m_Id: 1002068167426048
     m_Localized: "Augmentez votre exp\xE9rience FabLab"
     m_Metadata:
@@ -48,7 +44,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1005444414373888
-    m_Localized: "D\xE9couvrez l'espace FabLab comme jamais auparavant"
+    m_Localized: "D\xE9couvrez FabLab d'une fa\xE7on unique"
     m_Metadata:
       m_Items: []
   - m_Id: 1005945692422144
@@ -57,7 +53,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1006915461644288
-    m_Localized: Pensez comme un expert
+    m_Localized: "Acc\xE9der \xE0 une large vari\xE9t\xE9 d'informations"
     m_Metadata:
       m_Items: []
   - m_Id: 1007296543522816
@@ -70,7 +66,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1007674672611328
-    m_Localized: Danger et risque
+    m_Localized: "Risques de s\xE9curit\xE9"
     m_Metadata:
       m_Items: []
   - m_Id: 1007736349851648
@@ -83,6 +79,258 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 1008037194694656
     m_Localized: "D\xE9marrez La Cam\xE9ra"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2878590432931840
+    m_Localized: Cliquez sur une popup pour afficher son contenu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3199153097502720
+    m_Localized: "Marque: Raise3D\r\nMod\xE8le: N1"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3199524914163712
+    m_Localized: "L'impression 3D produit des formes tr\xE8s complexes qui seraient
+      autrement impossibles \xE0 construire \xE0 la main"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3200241120931840
+    m_Localized: "Vous pouvez r\xE9gler les param\xE8tres machine \xE0 l'aide de
+      cet \xE9cran"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3200538216067072
+    m_Localized: Cette partie est responsable de l'impression de l'objet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3201202396688384
+    m_Localized: "Selon l'objet, l'impression 3D peut prendre de 30 minutes jusqu'
+      \xE0 plusieurs jours"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3201503790985216
+    m_Localized: 'Volume de construction: 205x205x205 mm
+
+      Vitesse d''impression:
+      10 - 150 mm/s'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3202201031110656
+    m_Localized: Ceci est la surface d'impression
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3202965635952640
+    m_Localized: "Avec \"ideaMaker\", vous pouvez importer un fichier .stl ou .obj
+      et le pr\xE9parer pour l'impression"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3203835165503488
+    m_Localized: "\xC0 l'aide de ce port USB, vous pouvez importer votre fichier
+      de mod\xE8le pr\xE9par\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3204578257760256
+    m_Localized: "Vous pouvez allumer/\xE9teindre la machine \xE0 partir de ce bouton"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3204757300015104
+    m_Localized: "Vous pouvez recharger le filament de la machine \xE0 partir d'ici"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3204926280134656
+    m_Localized: "N'\xE9teignez pas la machine pendant l'impression"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3205057553461248
+    m_Localized: "Il faut attendre au moins 20 minutes pour que la machine refroidisse
+      avant de l'\xE9teindre"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4281610181898240
+    m_Localized: Chargement..
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5007439829532672
+    m_Localized: "Type: Routeur CNC\nMod\xE8le: 6090Z-VFD1.5KW"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5026937928286208
+    m_Localized: "Les forets du CNC les plus utilis\xE9s sont pour: La Gravure, La
+      Coupure & La Perforation"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5027943718191104
+    m_Localized: "Tr\xE8s pr\xE9cis et permet une pr\xE9cision am\xE9lior\xE9e gr\xE2ce
+      \xE0 un traitement lent avec une tol\xE9rance de \xB1 0,00508 mm \xE0 \xB1
+      0,0127 mm"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5030685073342464
+    m_Localized: "Zone de gravure: 900x600mm\nVitesse de gravure: 300-3000 mm/min\nCourse
+      de l'axe Z:\r 125mm "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5031918446182400
+    m_Localized: "Ces supports emp\xEAchent le mouvements des mat\xE9riaux lors d'usinage"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5032197363204096
+    m_Localized: Voici la broche, le coeur de la machines CNC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5034327314661376
+    m_Localized: 'Cette machine CNC fonctionne sur 3 axes : X, Y et Z. Ceci permet
+      d''achever les operations 3D.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5034857311109120
+    m_Localized: "Le CNC Controller prend le G-code et le transforme en mouvement
+      en contr\xF4lant les diff\xE9rents axes et la broche"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5036769318141952
+    m_Localized: Les Types des fichier que cette machine utilise sont DXF, DWG, PDF
+      et STL pour 3D, ect...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5037982835146752
+    m_Localized: "Placez le mat\xE9riel sur cette plateforme"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5038292873904128
+    m_Localized: Fixez le materiel en utilisant les supports
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5039033877397504
+    m_Localized: "Vous pouvez allumer/\xE9teindre la machine \xE0 partir de ce bouton"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5039150869118976
+    m_Localized: "Ne vous approchez jamais de la t\xEAte de la machine lorsque la
+      coupe est en cours"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5039489349451776
+    m_Localized: "Portez toujours des lunettes de protection pour prot\xE9ger vos
+      yeux d'\xE9ventuelles particules volantes"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5039886126415872
+    m_Localized: "Appuyez sur ce bouton pour arr\xEAter tout mouvement si quelque
+      chose s'emm\xEAle dans la machine ou si la machine se d\xE9traque"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6070854713147392
+    m_Localized: "Type: D\xE9coupe Laser\nMod\xE8le: GS1610"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6071647281414144
+    m_Localized: Fermez le couvercle avant d'utiliser la machine
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6071668563312640
+    m_Localized: En cas d'incident, appuyez sur le bouton d'urgence ici
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6071254866526208
+    m_Localized: "La d\xE9coupeuse laser accepte les fichiers 2D avec l'extension
+      Al, CDR, BMP, JPG, DST, PLT, DXF, DWG, TIFF, PSD"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6071561851830272
+    m_Localized: "Il s'agit du port USB utilis\xE9 pour connecter la d\xE9coupeuse
+      laser \xE0 notre PC"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6071685344722944
+    m_Localized: "Gardez une distance de s\xE9curit\xE9 par rapport \xE0 la machine
+      lorsqu'elle fonctionne"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6071510870065152
+    m_Localized: "Logiciels support\xE9s: CorelDraw, Photoshop, AutoCAD"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6071536837001216
+    m_Localized: 'Vitesse de coupe: 0-36000mm/min
+
+      Vitesse de gravure: 0-64000mm/min'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6135043225878528
+    m_Localized: "Un refroidisseur industriel emp\xEAche la surchauffe de la d\xE9coupeuse
+      laser"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6071036213264384
+    m_Localized: "Selon la forme souhait\xE9e, le processus peut prendre de quelques
+      secondes \xE0 plusieurs heures"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7281857134018560
+    m_Localized: Imprimante 3D
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7281967989473280
+    m_Localized: "Machine D\xE9coupe Laser"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7282948307369984
+    m_Localized: Machine CNC 3 Axes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7572065313189888
+    m_Localized: "Vous pouvez r\xE9gler les param\xE8tres machine \xE0 l'aide de
+      cet \xE9cran"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9755192924139520
+    m_Localized: "L'acc\xE8s \xE0 la cam\xE9ra est requis"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9755922699481088
+    m_Localized: "Nous avons besoin d'acc\xE9der \xE0 la cam\xE9ra pour pouvoir reconna\xEEtre
+      les tags des machines et afficher les popups"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9756084515729408
+    m_Localized: "Accorder l'acc\xE8s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9758450342260736
+    m_Localized: "Quelque chose s'est mal pass\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10923017160192000
+    m_Localized: "L'objet est imprim\xE9 par fusion et extrusion d'un mat\xE9riau
+      couche par couche, sur la base d'un dessin num\xE9rique."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11995128423346176
+    m_Localized: "Vous n'\xEAtes qu'\xE0 \nun clic"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11996281424932864
+    m_Localized: "Pour utiliser nos fonctionnalit\xE9s de r\xE9alit\xE9 augment\xE9e,
+      nous avons besoin d'acc\xE9der \xE0 votre cam\xE9ra."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12011444974743552
+    m_Localized: Simulation de machines
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14590908220928000
+    m_Localized: Scannez le tag d'une machine
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17018872212582400
+    m_Localized: "Cette machine utilise un laser pour d\xE9couper ou graver des mat\xE9riaux
+      avec pr\xE9cision."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17805253687996416
+    m_Localized: "Cette machine peut sculpter ou graver du bois ou d'autres mat\xE9riaux.
+      Il suit les instructions programm\xE9es par l'utilisateur."
     m_Metadata:
       m_Items: []
   references:

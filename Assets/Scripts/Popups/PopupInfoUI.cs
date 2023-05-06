@@ -11,26 +11,26 @@ namespace Popups
         // Instance - Singleton pattern
         public static PopupInfoUI Instance { get; private set; }
 
-        [SerializeField] [Tooltip("Duration of the enter/exit translation animation")]
-        [Range(0, 1)] private float animationDuration;
+        [Tooltip("Duration of the enter/exit translation animation")]
+        [Range(0, 1)] [SerializeField] private float animationDuration;
 
-        [SerializeField] [Tooltip("Container of the title text")]
-        private Image titleContainer;
+        [Tooltip("Container of the title text")]
+        [SerializeField] private Image titleContainer;
 
-        [SerializeField] [Tooltip("Title text component")]
-        private TextMeshProUGUI machineTitle;
+        [Tooltip("Title text component")]
+        [SerializeField] private TextMeshProUGUI machineTitle;
         
-        [SerializeField] [Tooltip("Information text component")]
-        private TextMeshProUGUI information;
+        [Tooltip("Information text component")]
+        [SerializeField] private TextMeshProUGUI information;
         
-        [SerializeField] [Tooltip("Colors applied to text component and title container when a popup is clicked")]
-        private PopupColors popupColors;
+        [Tooltip("Colors applied to text component and title container when a popup is clicked")]
+        [SerializeField] private PopupColors popupColors;
 
-        [SerializeField] [Tooltip("Name of the localized string table")]
-        private string stringTableReference = "Missing Table Reference";
+        [Tooltip("Name of the localized string table")]
+        [SerializeField] private string stringTableReference = "Missing Table Reference";
         
-        [SerializeField] [Tooltip("Reference to the localized string that holds the default information text")]
-        private string defaultInformationReference = "Missing Default Reference";
+        [Tooltip("Reference to the localized string that holds the default information text")]
+        [SerializeField] private string defaultInformationReference = "Missing Default Reference";
         
         // Used to retrieve the localized popup information using its reference. Example: R3N1 G1
         private LocalizedString _localizedInformation;
@@ -66,6 +66,7 @@ namespace Popups
             
             var localPositionY = transform.localPosition.y;
             var heightOfUI = GetComponent<RectTransform>().rect.height;
+            
             // Enter animation: translate upwards from initial local position until whole UI is visible
             _enterAnimation = CreateTranslationAnimation(new Vector3(0, localPositionY + heightOfUI, 0));
             // Exit animation: translate back to initial local position
@@ -77,7 +78,7 @@ namespace Popups
         {
             var translationAnimation = gameObject.AddComponent<TranslationAnimation>();
 
-            // Initialize component members
+            // Animation properties
             translationAnimation.animationProps = new UIAnimationProps<Vector3>
             {
                 autoPlay = false,
@@ -97,15 +98,6 @@ namespace Popups
             _localizedMachineTitle.TableEntryReference = reference;
             
             machineTitle.text = _localizedMachineTitle.GetLocalizedString();
-        }
-        
-        // Update the information text component to the default
-        private void UpdateInformationText()
-        {
-            _localizedInformation.TableReference = stringTableReference;
-            _localizedInformation.TableEntryReference = defaultInformationReference;
-            
-            information.text = _localizedInformation.GetLocalizedString();
         }
 
         // Update the information text component using reference to a localized string
@@ -144,19 +136,19 @@ namespace Popups
             UpdateTitle(titleReference);
             
             // Set information text and color to default
-            UpdateInformationText();
-            UpdateColor(popupColors.defaultColor);
-            
+            UpdateInformationText(defaultInformationReference);
+            UpdateColor(popupColors.DefaultColor);
+
             _enterAnimation.Play();
         }
 
         /// <summary>
         /// Hides the UI by playing an exit animation.
-        /// This will ONLY execute if the given reference matches the currently displayed machine title reference
         /// </summary>
         /// <param name="titleReference">Reference to the localized string that holds the machine title</param>
         public void HideUI(string titleReference)
         {
+            // If the given reference does not match the currently displayed machine's title reference, do nothing
             if (titleReference != _localizedMachineTitle.TableEntryReference) return;
             
             _exitAnimation.Play();

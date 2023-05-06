@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 namespace Popups
@@ -10,11 +9,11 @@ namespace Popups
     public class Popup : MonoBehaviour
     {
         [Tooltip("Reference to the localized string that holds this popup's information")]
-        public string informationReference = "Missing Reference";
+        [SerializeField] private string informationReference = "Missing Reference";
         [Tooltip("Type of the popup")]
-        public PopupType type;
+        [SerializeField] private PopupType type;
         [Tooltip("Script that plays the machine's simulation. It requires an Animator component attached to it")]
-        public MachineSimulation simulation;
+        [SerializeField] private MachineSimulation simulation;
 
         /// <summary>
         /// Updates the UI of <see cref="PopupInfoUI"/> using this popup's information reference and type.

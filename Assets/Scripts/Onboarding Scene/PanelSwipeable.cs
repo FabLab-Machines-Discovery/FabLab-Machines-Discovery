@@ -6,7 +6,7 @@ namespace Onboarding_Scene
     public class PanelSwipeable : MonoBehaviour
     {
         [Tooltip("The PanelSwiper component that owns this swipeable panel")]
-        public PanelSwiper owner;
+        [SerializeField] private PanelSwiper owner;
 
         // Index of this swipeable panel in the hierarchy
         private int _index;
@@ -15,6 +15,12 @@ namespace Onboarding_Scene
         private IUIAnimation[] _animations;
 
         private void Awake()
+        {
+            Init();
+        }
+
+        // Caches the index of this and list of animations, and subscribes to the OnSwipe event
+        private void Init()
         {
             _index = transform.GetSiblingIndex();
             _animations = GetComponentsInChildren<IUIAnimation>();

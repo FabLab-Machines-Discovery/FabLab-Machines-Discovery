@@ -9,10 +9,10 @@ namespace Onboarding_Scene
     public class PanelSwiper : MonoBehaviour, IDragHandler, IEndDragHandler
     {
         [Tooltip("At what percentage threshold should I swipe to the next panel automatically")]
-        [Range(0, 1)] public float swipeThreshold;
+        [Range(0, 1)] [SerializeField] private float swipeThreshold;
         
         [Tooltip("Duration it takes to smoothly swipe to another panel")]
-        [Range(0, 1)] public float swipeDuration;
+        [Range(0, 1)] [SerializeField] private float swipeDuration;
         
         /// <summary>
         /// Event called when a swipe happens.
@@ -40,7 +40,7 @@ namespace Onboarding_Scene
         }
         
         /*
-         * Sets up the swipeable panels' positions so that they are adjacent to each other with no space in between.
+         * Sets up the panels' positions so that they are adjacent to each other with no space in between.
          * This was necessary because depending on the screen resolution, the panels would sometimes have empty
          * spaces between them, and that would mess up the design and the swipe logic
          */
@@ -69,9 +69,9 @@ namespace Onboarding_Scene
             // Only care about updating the x value of the Transform when dragging
             float xPos;
             
-            // If it's the first panel, only allow swiping to the right
-            // If it's the last panel, only allow swiping to the left
-            // Otherwise allow swiping both ways
+            // If it's the first panel, only allow swiping to next panel
+            // If it's the last panel, only allow swiping to previous panel
+            // Otherwise allow swiping both directions
             if (_currentPanelIndex == 0)
             {
                 xPos = Mathf.Clamp(_startPosition.x - movement, _startPosition.x - _swipeDistance, _startPosition.x);
@@ -95,8 +95,8 @@ namespace Onboarding_Scene
             // How much of the screen was dragged
             var threshold = (data.pressPosition.x - data.position.x) / Screen.width;
 
-            // If it exceeds the threshold, tween to the position of the next swipeable panel
-            // Otherwise tween back to the position of the current swipeable panel
+            // If it exceeds the swipe threshold and would swipe to a valid panel, then swipe to that panel
+            // and invoke the OnSwipe event
             if (Mathf.Abs(threshold) >= swipeThreshold)
             {
                 if (threshold > 0 && _currentPanelIndex < transform.childCount - 1)

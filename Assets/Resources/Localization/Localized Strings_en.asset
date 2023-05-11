@@ -262,7 +262,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6135043225878528
-    m_Localized: Industrial chiller prevents the laser cutter from overheating
+    m_Localized: Industrial chiller prevents the laser cutter from overheating. It
+      can be found next to the machine on the left.
     m_Metadata:
       m_Items: []
   - m_Id: 6071036213264384

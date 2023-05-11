@@ -258,8 +258,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6135043225878528
-    m_Localized: "Un refroidisseur industriel emp\xEAche la surchauffe de la d\xE9coupeuse
-      laser"
+    m_Localized: "Un refroidisseur emp\xEAche la surchauffe de la d\xE9coupeuse laser.
+      Il se trouve \xE0 c\xF4t\xE9 de la machine sur la gauche."
     m_Metadata:
       m_Items: []
   - m_Id: 6071036213264384

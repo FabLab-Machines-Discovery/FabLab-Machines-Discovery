@@ -16,14 +16,15 @@ namespace Vuforia
         public void HandleError()
         {
 #if UNITY_ANDROID
-            HandleAndroidPermission();
+            HandlePermission();
 #elif UNITY_IOS
-            StartCoroutine(HandleIOSPermission());
+            StartCoroutine(HandlePermission());
 #endif
         }
 
+#if UNITY_ANDROID
         // Android Specific
-        private void HandleAndroidPermission()
+        private void HandlePermission()
         {
             // Call Continue() from a callback if permissions are granted
             var callbacks = new PermissionCallbacks();
@@ -32,9 +33,9 @@ namespace Vuforia
             // Request missing permissions
             Permission.RequestUserPermission(Permission.Camera, callbacks);
         }
-
+#elif UNITY_IOS
         // iOS Specific
-        private IEnumerator HandleIOSPermission()
+        private IEnumerator HandlePermission()
         {
             // Wait for the user grant or deny permissions
             yield return Application.RequestUserAuthorization(UserAuthorization.WebCam);
@@ -45,7 +46,8 @@ namespace Vuforia
                 StartCoroutine(Continue());
             }
         }
-
+#endif
+        
         // Called after user grants the missing permission
         private IEnumerator Continue()
         {
@@ -56,6 +58,5 @@ namespace Vuforia
             // Initialize Vuforia now that the loading panel is visible instead of the permission error panel
             VuforiaApplication.Instance.Initialize();
         }
-        
     }
 }
